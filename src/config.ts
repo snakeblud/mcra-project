@@ -1,0 +1,37 @@
+import type { ReactNode } from "react";
+
+import { type TermSlug } from "./types/planner";
+
+export type AcademicYear = `${number}/${number}`;
+
+export type Banner = {
+  id: string;
+  message: ReactNode;
+};
+
+export type Config = {
+  academicYear: AcademicYear;
+  currentTerm: TermSlug;
+  banners: Banner[];
+  termStartMonday: string;
+  termEndSunday: string;
+};
+
+export const PADDING = "0.5rem";
+
+export const APP_CONFIG: Config = {
+  academicYear: "2025/2026",
+  currentTerm: "term-2",
+  banners: [
+    {
+      id: "welcome",
+      message: "Welcome to the new academic year!",
+    },
+    {
+      id: "timetable",
+      message: "Don't forget to plan your timetable for the upcoming term!",
+    },
+  ],
+  termStartMonday: "2026-01-12",
+  termEndSunday: "2026-05-03",
+};

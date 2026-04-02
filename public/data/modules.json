@@ -1,0 +1,1180 @@
+{
+  "IS112": {
+    "moduleCode": "IS112",
+    "name": "Data Management",
+    "credit": 1,
+    "description": "This course introduces students to the fundamental concepts of data management. Topics include the relational data model, SQL, database design, normalization, and introductory data warehousing concepts.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "PATRICK HUNG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-1", "level": "B1" },
+        "classes": [
+          { "day": "Monday", "startTime": "08:15", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "08:15", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "PATRICK HUNG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-2", "level": "B1" },
+        "classes": [
+          { "day": "Tuesday", "startTime": "08:15", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "08:15", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G3",
+        "professor": { "name": "GAN KENG SOON" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-1", "level": 2 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Friday", "startTime": "08:15", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-20T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS113": {
+    "moduleCode": "IS113",
+    "name": "Web Application Development 1",
+    "credit": 1,
+    "description": "This course introduces web application development using modern technologies. Students learn HTML, CSS, JavaScript, and frameworks to build interactive web applications.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "PETER TAN" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-3", "level": "B1" },
+        "classes": [
+          { "day": "Monday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "13:45", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "PETER TAN" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-3", "level": "B1" },
+        "classes": [
+          { "day": "Tuesday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "13:45", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-22T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS114": {
+    "moduleCode": "IS114",
+    "name": "Introduction to Data Science and Artificial Intelligence",
+    "credit": 1,
+    "description": "This course provides an introduction to data science and artificial intelligence. Topics include data wrangling, exploratory data analysis, machine learning fundamentals, and basic AI concepts.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "KYONG JIN SHIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-2", "level": 2 },
+        "classes": [
+          { "day": "Monday", "startTime": "09:00", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "09:00", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "KYONG JIN SHIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-3", "level": 2 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "09:00", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "09:00", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G3",
+        "professor": { "name": "LIM EE PENG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-4", "level": 2 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "15:30", "duration": 3.25 },
+          { "day": "Friday", "startTime": "09:00", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-25T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS210": {
+    "moduleCode": "IS210",
+    "name": "Enterprise Solution Development",
+    "credit": 1,
+    "description": "This course covers enterprise-level software development practices including design patterns, software architecture, and agile methodologies for building scalable enterprise solutions.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": { "and": ["IS112", "IS113"] },
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "BENJAMIN LIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 3-1", "level": 3 },
+        "classes": [
+          { "day": "Monday", "startTime": "15:30", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "15:30", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "BENJAMIN LIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 3-2", "level": 3 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "15:30", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "15:30", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-27T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS211": {
+    "moduleCode": "IS211",
+    "name": "Interaction Design and Prototyping",
+    "credit": 1,
+    "description": "This course focuses on user-centered design principles, usability testing, and prototyping techniques for creating effective and engaging user interfaces.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "IS113",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "LAURA YOUNG" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 2-1", "level": 2 },
+        "classes": [
+          { "day": "Monday", "startTime": "10:45", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "10:45", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "LAURA YOUNG" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 2-2", "level": 2 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "10:45", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "10:45", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-29T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS212": {
+    "moduleCode": "IS212",
+    "name": "Software Project Management",
+    "credit": 1,
+    "description": "This course covers project management methodologies for software projects, including planning, risk management, agile practices, and team coordination.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "IS210",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "ALAN GOH" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 4-1", "level": 4 },
+        "classes": [
+          { "day": "Monday", "startTime": "17:15", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "17:15", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "ALAN GOH" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 4-2", "level": 4 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "17:15", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "17:15", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G3",
+        "professor": { "name": "DAVID CHEW" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 4-3", "level": 4 },
+        "classes": [
+          { "day": "Friday", "startTime": "08:15", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "19:00", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-05-02T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS213": {
+    "moduleCode": "IS213",
+    "name": "Enterprise Solution Development 2",
+    "credit": 1,
+    "description": "Building on IS210, this course covers advanced enterprise application development including microservices, cloud computing, and DevOps practices.",
+    "terms": ["Term 2", "Term 3A"],
+    "preReq": "IS210",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "BENJAMIN LIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 3-3", "level": 3 },
+        "classes": [
+          { "day": "Monday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "13:45", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "JASON LEE" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 3-4", "level": 3 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "13:45", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-21T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS214": {
+    "moduleCode": "IS214",
+    "name": "Enterprise Solution Management",
+    "credit": 1,
+    "description": "This course covers the management of enterprise IT systems including governance, IT service management, enterprise architecture frameworks, and IT strategy alignment.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "IS210",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "WINSTON KOH" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 3-1", "level": 3 },
+        "classes": [
+          { "day": "Monday", "startTime": "09:00", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "09:00", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "WINSTON KOH" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 3-2", "level": 3 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "09:00", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "09:00", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-23T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS215": {
+    "moduleCode": "IS215",
+    "name": "Digital Business - Technology and Transformation",
+    "credit": 1,
+    "description": "This course explores digital business transformation, covering emerging technologies, digital strategy, and the impact of technology on business models and processes.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "RICHARD LIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-4", "level": "B1" },
+        "classes": [
+          { "day": "Monday", "startTime": "15:30", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "15:30", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "RICHARD LIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-4", "level": "B1" },
+        "classes": [
+          { "day": "Tuesday", "startTime": "15:30", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "15:30", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-26T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS216": {
+    "moduleCode": "IS216",
+    "name": "Web Application Development 2",
+    "credit": 1,
+    "description": "Building on IS113, this course covers advanced web development with React, server-side rendering, API design, authentication, and deployment.",
+    "terms": ["Term 2", "Term 3A"],
+    "preReq": "IS113",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "PETER TAN" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-3", "level": "B1" },
+        "classes": [
+          { "day": "Monday", "startTime": "17:15", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "17:15", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "SARAH WONG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-4", "level": "B1" },
+        "classes": [
+          { "day": "Tuesday", "startTime": "17:15", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "17:15", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-28T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS412": {
+    "moduleCode": "IS412",
+    "name": "Enterprise Solution Development 3",
+    "credit": 1,
+    "description": "Advanced topics in enterprise solution development covering distributed systems, cloud-native applications, and cutting-edge enterprise architectures.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "IS213",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "JASON LEE" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 4-4", "level": 4 },
+        "classes": [
+          { "day": "Monday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "13:45", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-22T14:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS442": {
+    "moduleCode": "IS442",
+    "name": "IS Product Development",
+    "credit": 1,
+    "description": "A capstone project course where students apply their IS knowledge to develop a real-world product, working in teams through ideation, prototyping, and deployment.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": { "and": ["IS212", "IS216"] },
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "ALAN GOH" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 4-1", "level": 4 },
+        "classes": [
+          { "day": "Friday", "startTime": "08:15", "duration": 3.25 },
+          { "day": "Friday", "startTime": "12:00", "duration": 0.75 }
+        ]
+      }
+    ]
+  },
+  "IS458": {
+    "moduleCode": "IS458",
+    "name": "Developing AI Applications",
+    "credit": 1,
+    "description": "This course focuses on building AI-powered applications, covering NLP, computer vision, generative AI APIs, and responsible AI deployment practices.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "IS114",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "KYONG JIN SHIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-5", "level": 2 },
+        "classes": [
+          { "day": "Monday", "startTime": "09:00", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "09:00", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-30T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "IS492": {
+    "moduleCode": "IS492",
+    "name": "Capstone Project",
+    "credit": 1,
+    "description": "Students work on a significant IS project that integrates knowledge from previous courses, demonstrating mastery of IS concepts in a practical context.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": { "and": ["IS442"] },
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "ALAN GOH" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 4-2", "level": 4 },
+        "classes": [
+          { "day": "Friday", "startTime": "13:45", "duration": 3.25 }
+        ]
+      }
+    ]
+  },
+  "IS446": {
+    "moduleCode": "IS446",
+    "name": "Advanced Topics in IS Development",
+    "credit": 1,
+    "description": "Covers advanced topics in IS development including blockchain, IoT integration, advanced cloud architectures, and emerging enterprise technologies.",
+    "terms": ["Term 2"],
+    "preReq": "IS412",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "DAVID CHEW" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 4-5", "level": 4 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "13:45", "duration": 0.75 }
+        ]
+      }
+    ]
+  },
+  "CS101": {
+    "moduleCode": "CS101",
+    "name": "Programming Methodology",
+    "credit": 1,
+    "description": "Introduction to programming using Python. Covers fundamental programming concepts including variables, control structures, functions, recursion, and object-oriented programming.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "HENRY CHANG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-1", "level": "B1" },
+        "classes": [
+          { "day": "Monday", "startTime": "08:15", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "08:15", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "HENRY CHANG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-2", "level": "B1" },
+        "classes": [
+          { "day": "Tuesday", "startTime": "08:15", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "08:15", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G3",
+        "professor": { "name": "MICHELLE TAN" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-3", "level": "B1" },
+        "classes": [
+          { "day": "Wednesday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Friday", "startTime": "08:15", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-18T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "CS102": {
+    "moduleCode": "CS102",
+    "name": "Programming Methodology 2",
+    "credit": 1,
+    "description": "Continuation of CS101 covering advanced programming concepts, data structures, algorithms, and software development practices.",
+    "terms": ["Term 2", "Term 3A"],
+    "preReq": "CS101",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "HENRY CHANG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-2", "level": "B1" },
+        "classes": [
+          { "day": "Monday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "13:45", "duration": 0.75 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "MICHELLE TAN" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room B1-3", "level": "B1" },
+        "classes": [
+          { "day": "Tuesday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "13:45", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-20T14:00:00.000Z", "durationInHour": 2 }
+  },
+  "CS206": {
+    "moduleCode": "CS206",
+    "name": "Software Systems Design",
+    "credit": 1,
+    "description": "Design principles and patterns for building reliable, maintainable, and scalable software systems. Covers design patterns, SOLID principles, and architectural styles.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "CS102",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "MICHELLE TAN" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-1", "level": 2 },
+        "classes": [
+          { "day": "Monday", "startTime": "15:30", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "15:30", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-24T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "CS301": {
+    "moduleCode": "CS301",
+    "name": "Algorithms",
+    "credit": 1,
+    "description": "Design and analysis of algorithms. Topics include sorting, searching, dynamic programming, greedy algorithms, graph algorithms, and complexity theory.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "CS206",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "STEVEN LIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 3-1", "level": 3 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "08:15", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "08:15", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-28T14:00:00.000Z", "durationInHour": 2 }
+  },
+  "CS440": {
+    "moduleCode": "CS440",
+    "name": "Machine Learning",
+    "credit": 1,
+    "description": "Fundamentals of machine learning including supervised learning, unsupervised learning, neural networks, deep learning, and practical ML engineering.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": { "and": ["CS301", "IS114"] },
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "LIM EE PENG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 3-2", "level": 3 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "09:00", "duration": 3.25 },
+          { "day": "Friday", "startTime": "09:00", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-05-01T09:00:00.000Z", "durationInHour": 2 }
+  },
+  "CS461": {
+    "moduleCode": "CS461",
+    "name": "Natural Language Processing",
+    "credit": 1,
+    "description": "Introduction to NLP covering text processing, language models, sequence labelling, parsing, sentiment analysis, and transformer-based models.",
+    "terms": ["Term 2"],
+    "preReq": "CS440",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "STEVEN LIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 3-3", "level": 3 },
+        "classes": [
+          { "day": "Thursday", "startTime": "13:45", "duration": 3.25 },
+          { "day": "Tuesday", "startTime": "19:00", "duration": 0.75 }
+        ]
+      }
+    ]
+  },
+  "CS462": {
+    "moduleCode": "CS462",
+    "name": "Data Mining",
+    "credit": 1,
+    "description": "Techniques and algorithms for extracting knowledge from large datasets including association rules, classification, clustering, and anomaly detection.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "CS440",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "LIM EE PENG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 3-4", "level": 3 },
+        "classes": [
+          { "day": "Monday", "startTime": "10:45", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "10:45", "duration": 0.75 }
+        ]
+      }
+    ],
+    "exam": { "dateTime": "2026-04-30T14:00:00.000Z", "durationInHour": 2 }
+  },
+  "CS443": {
+    "moduleCode": "CS443",
+    "name": "Cloud Computing",
+    "credit": 1,
+    "description": "Cloud computing concepts, services, and architectures. Topics include IaaS, PaaS, SaaS, containerization, orchestration, and cloud security.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "CS206",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "DAVID CHEW" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 4-1", "level": 4 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "10:45", "duration": 3.25 },
+          { "day": "Thursday", "startTime": "10:45", "duration": 0.75 }
+        ]
+      }
+    ]
+  },
+  "SE301": {
+    "moduleCode": "SE301",
+    "name": "Software Testing and Quality Assurance",
+    "credit": 1,
+    "description": "Systematic approaches to software testing including unit testing, integration testing, system testing, test-driven development, and CI/CD pipelines.",
+    "terms": ["Term 1", "Term 2"],
+    "preReq": "IS212",
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "ALAN GOH" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 3-3", "level": 3 },
+        "classes": [
+          { "day": "Monday", "startTime": "17:15", "duration": 3.25 },
+          { "day": "Wednesday", "startTime": "17:15", "duration": 0.75 }
+        ]
+      }
+    ]
+  },
+  "COR1301": {
+    "moduleCode": "COR1301",
+    "name": "Leadership and Team Dynamics",
+    "credit": 1,
+    "description": "Developing leadership capabilities and understanding team dynamics. Students learn frameworks for effective leadership, conflict resolution, and team building.",
+    "terms": ["Term 1", "Term 2", "Term 3A", "Term 3B"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "CAROL NG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-1", "level": 1 },
+        "classes": [
+          { "day": "Monday", "startTime": "09:00", "duration": 1.5 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "CAROL NG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-1", "level": 1 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "09:00", "duration": 1.5 }
+        ]
+      },
+      {
+        "code": "G3",
+        "professor": { "name": "JAMES KOH" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-2", "level": 1 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "09:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR1305": {
+    "moduleCode": "COR1305",
+    "name": "Creating Ventures",
+    "credit": 1,
+    "description": "Entrepreneurship and venture creation. Students learn to identify opportunities, develop business models, pitch ideas, and navigate the startup ecosystem.",
+    "terms": ["Term 1", "Term 2", "Term 3A"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "JAMES KOH" },
+        "location": { "building": "Li Ka Shing Library", "room": "Seminar Room 1-1", "level": 1 },
+        "classes": [
+          { "day": "Monday", "startTime": "13:45", "duration": 1.5 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "JAMES KOH" },
+        "location": { "building": "Li Ka Shing Library", "room": "Seminar Room 1-2", "level": 1 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "13:45", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR1306": {
+    "moduleCode": "COR1306",
+    "name": "Strategic Management",
+    "credit": 1,
+    "description": "Frameworks for analyzing competitive environments and formulating effective business strategies. Covers Porter's Five Forces, SWOT analysis, and blue ocean strategy.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "WINSTON KOH" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 2-1", "level": 2 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "13:45", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR1307": {
+    "moduleCode": "COR1307",
+    "name": "Marketing",
+    "credit": 1,
+    "description": "Principles of marketing covering market analysis, segmentation, targeting, positioning, and the marketing mix (product, price, place, promotion).",
+    "terms": ["Term 1", "Term 2", "Term 3A", "Term 3B"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "RICHARD LIM" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 2-1", "level": 2 },
+        "classes": [
+          { "day": "Thursday", "startTime": "09:00", "duration": 1.5 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "RICHARD LIM" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 2-1", "level": 2 },
+        "classes": [
+          { "day": "Friday", "startTime": "09:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR1202": {
+    "moduleCode": "COR1202",
+    "name": "Statistics",
+    "credit": 1,
+    "description": "Foundational statistics for business and social science. Topics include descriptive statistics, probability, sampling distributions, hypothesis testing, and regression analysis.",
+    "terms": ["Term 1", "Term 2", "Term 3A", "Term 3B"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GRACE ONG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-3", "level": 2 },
+        "classes": [
+          { "day": "Monday", "startTime": "10:45", "duration": 1.5 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "GRACE ONG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-3", "level": 2 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "10:45", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR1703": {
+    "moduleCode": "COR1703",
+    "name": "Computational Thinking",
+    "credit": 1,
+    "description": "Introduces computational thinking as a problem-solving approach, covering abstraction, decomposition, pattern recognition, and algorithm design without programming.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GAN KENG SOON" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 1-1", "level": 1 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "15:30", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR1701": {
+    "moduleCode": "COR1701",
+    "name": "Reasoning with Logic",
+    "credit": 1,
+    "description": "Develops critical thinking and logical reasoning skills. Topics include propositional logic, predicate logic, argument analysis, and applying logic to everyday situations.",
+    "terms": ["Term 1", "Term 2", "Term 3A"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "CAROL NG" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 1-2", "level": 1 },
+        "classes": [
+          { "day": "Thursday", "startTime": "13:45", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR2201": {
+    "moduleCode": "COR2201",
+    "name": "Science, Technology and Society",
+    "credit": 1,
+    "description": "Explores the intersection of science, technology, and society. Examines how technological developments shape and are shaped by social, political, and cultural forces.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GRACE ONG" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 2-3", "level": 2 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "10:45", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR2210": {
+    "moduleCode": "COR2210",
+    "name": "Artificial Intelligence and Society",
+    "credit": 1,
+    "description": "Critical examination of AI's impact on society, ethics, bias, fairness, accountability, and governance of AI systems.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "KYONG JIN SHIM" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-6", "level": 2 },
+        "classes": [
+          { "day": "Friday", "startTime": "13:45", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR3001": {
+    "moduleCode": "COR3001",
+    "name": "SMU-X",
+    "credit": 1,
+    "description": "SMU-X is an experiential learning module where students work on real-world projects with industry partners, NGOs, or government agencies to address authentic challenges.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "JAMES KOH" },
+        "location": { "building": "Various", "room": "Project Space", "level": null },
+        "classes": [
+          { "day": "Friday", "startTime": "09:00", "duration": 3.25 }
+        ]
+      }
+    ]
+  },
+  "COR2100": {
+    "moduleCode": "COR2100",
+    "name": "Academic Writing",
+    "credit": 1,
+    "description": "Develops academic writing skills for university-level contexts. Covers argumentation, structure, research skills, citation, and scholarly writing conventions.",
+    "terms": ["Term 1", "Term 2", "Term 3A", "Term 3B"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "CAROL NG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-3", "level": 1 },
+        "classes": [
+          { "day": "Monday", "startTime": "12:00", "duration": 1.5 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "CAROL NG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-3", "level": 1 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "12:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR1100": {
+    "moduleCode": "COR1100",
+    "name": "Freshman Seminar",
+    "credit": 1,
+    "description": "An orientation seminar for new students that introduces SMU's mission, values, and the Socratic classroom approach to learning.",
+    "terms": ["Term 1"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "RICHARD LIM" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-4", "level": 1 },
+        "classes": [
+          { "day": "Thursday", "startTime": "08:15", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR3301": {
+    "moduleCode": "COR3301",
+    "name": "Corporate Governance and Ethics",
+    "credit": 1,
+    "description": "Examination of corporate governance structures, board responsibilities, ethical leadership, and corporate social responsibility in the context of modern businesses.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "WINSTON KOH" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 3-1", "level": 3 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "15:30", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR3302": {
+    "moduleCode": "COR3302",
+    "name": "Technology Ethics",
+    "credit": 1,
+    "description": "Ethical frameworks applied to technology development and deployment. Covers privacy, security, AI ethics, digital rights, and the responsibilities of technologists.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GAN KENG SOON" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 3-2", "level": 3 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "17:15", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR2630": {
+    "moduleCode": "COR2630",
+    "name": "Chinese Culture and Society",
+    "credit": 1,
+    "description": "An exploration of Chinese civilization, culture, and society from ancient times to the modern era, examining art, philosophy, religion, and social structures.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GRACE ONG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 2-2", "level": 2 },
+        "classes": [
+          { "day": "Friday", "startTime": "10:45", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR2640": {
+    "moduleCode": "COR2640",
+    "name": "Southeast Asian Cultures",
+    "credit": 1,
+    "description": "Exploration of the diverse cultures, histories, and societies of Southeast Asia, examining colonial legacies, contemporary issues, and regional identity.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "JAMES KOH" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 2-3", "level": 2 },
+        "classes": [
+          { "day": "Thursday", "startTime": "10:45", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-STAT1202": {
+    "moduleCode": "COR-STAT1202",
+    "name": "Statistics for Social Sciences",
+    "credit": 1,
+    "description": "Statistical methods applied to social science research, covering descriptive statistics, inferential statistics, and interpretation of quantitative data.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GRACE ONG" },
+        "location": { "building": "SOE/SCIS2", "room": "Seminar Room 2-4", "level": 2 },
+        "classes": [
+          { "day": "Monday", "startTime": "15:30", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-STAT1203": {
+    "moduleCode": "COR-STAT1203",
+    "name": "Statistics for Business",
+    "credit": 1,
+    "description": "Statistical methods for business decision-making. Covers descriptive statistics, probability, sampling, regression, and time series analysis.",
+    "terms": ["Term 1", "Term 2", "Term 3A"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GRACE ONG" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 1-1", "level": 1 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "15:30", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-IS1702": {
+    "moduleCode": "COR-IS1702",
+    "name": "Digital Literacy",
+    "credit": 1,
+    "description": "Develops digital literacy skills for the modern workplace, covering data analysis, productivity tools, cybersecurity basics, and responsible digital citizenship.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "PETER TAN" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 1-3", "level": 1 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "12:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-MGMT1302": {
+    "moduleCode": "COR-MGMT1302",
+    "name": "Managing Organisations",
+    "credit": 1,
+    "description": "Introduction to organisational management principles including planning, organising, leading, and controlling in modern organisations.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "BENJAMIN LIM" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 2-2", "level": 2 },
+        "classes": [
+          { "day": "Monday", "startTime": "17:15", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-MGMT1303": {
+    "moduleCode": "COR-MGMT1303",
+    "name": "Managing Stakeholders",
+    "credit": 1,
+    "description": "Understanding stakeholder management in organisations, covering stakeholder identification, engagement strategies, and managing diverse interests.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "ALAN GOH" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 2-3", "level": 2 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "17:15", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-COMM1304": {
+    "moduleCode": "COR-COMM1304",
+    "name": "Business Communication",
+    "credit": 1,
+    "description": "Develops professional communication skills for business contexts, covering written communication, presentations, negotiation, and intercultural communication.",
+    "terms": ["Term 1", "Term 2", "Term 3A", "Term 3B"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "CAROL NG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-5", "level": 1 },
+        "classes": [
+          { "day": "Thursday", "startTime": "15:30", "duration": 1.5 }
+        ]
+      },
+      {
+        "code": "G2",
+        "professor": { "name": "CAROL NG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-5", "level": 1 },
+        "classes": [
+          { "day": "Friday", "startTime": "15:30", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-OBHR1309": {
+    "moduleCode": "COR-OBHR1309",
+    "name": "Organisational Behaviour",
+    "credit": 1,
+    "description": "Study of individual and group behaviour in organisations, covering motivation, personality, group dynamics, organisational culture, and change management.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "SARAH WONG" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 3-2", "level": 3 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "17:15", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-OBHR1310": {
+    "moduleCode": "COR-OBHR1310",
+    "name": "Human Resource Management",
+    "credit": 1,
+    "description": "Principles and practices of human resource management, covering recruitment, performance management, training, compensation, and labour relations.",
+    "terms": ["Term 2", "Term 3A"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "SARAH WONG" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 3-3", "level": 3 },
+        "classes": [
+          { "day": "Thursday", "startTime": "17:15", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-OBHR130": {
+    "moduleCode": "COR-OBHR130",
+    "name": "Individual Effectiveness",
+    "credit": 1,
+    "description": "Develops personal effectiveness skills including self-awareness, emotional intelligence, time management, and professional development.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "CAROL NG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 1-6", "level": 1 },
+        "classes": [
+          { "day": "Friday", "startTime": "17:15", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-PPPM1311": {
+    "moduleCode": "COR-PPPM1311",
+    "name": "Public Policy and Management",
+    "credit": 1,
+    "description": "Introduction to public policy and public sector management, covering policy analysis, government structures, public finance, and public-private partnerships.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "WINSTON KOH" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 4-1", "level": 4 },
+        "classes": [
+          { "day": "Tuesday", "startTime": "12:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-LAW2215": {
+    "moduleCode": "COR-LAW2215",
+    "name": "Law and Technology",
+    "credit": 1,
+    "description": "Legal frameworks governing technology, covering intellectual property, data protection, cybercrime, e-commerce law, and emerging tech regulation.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "JAMES KOH" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 4-2", "level": 4 },
+        "classes": [
+          { "day": "Wednesday", "startTime": "19:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-MGMT2211": {
+    "moduleCode": "COR-MGMT2211",
+    "name": "Innovation and Entrepreneurship",
+    "credit": 1,
+    "description": "Explores innovation processes, entrepreneurial mindset, and venture creation in corporate and startup environments.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "RICHARD LIM" },
+        "location": { "building": "Lee Kong Chian School of Business", "room": "Seminar Room 4-1", "level": 4 },
+        "classes": [
+          { "day": "Thursday", "startTime": "19:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-LAW2610": {
+    "moduleCode": "COR-LAW2610",
+    "name": "Law and Society in Asia",
+    "credit": 1,
+    "description": "Examines the relationship between law and society in Asian contexts, covering legal systems, human rights, and socio-legal issues in the region.",
+    "terms": ["Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GRACE ONG" },
+        "location": { "building": "SOE/SCIS1", "room": "Seminar Room 4-3", "level": 4 },
+        "classes": [
+          { "day": "Friday", "startTime": "19:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  },
+  "COR-MLAY2405": {
+    "moduleCode": "COR-MLAY2405",
+    "name": "Malay Culture and History",
+    "credit": 1,
+    "description": "Study of Malay culture, history, literature, and society, examining its contributions to Singapore and the broader Southeast Asian region.",
+    "terms": ["Term 1", "Term 2"],
+    "sections": [
+      {
+        "code": "G1",
+        "professor": { "name": "GRACE ONG" },
+        "location": { "building": "Administration Building", "room": "Seminar Room 3-1", "level": 3 },
+        "classes": [
+          { "day": "Monday", "startTime": "19:00", "duration": 1.5 }
+        ]
+      }
+    ]
+  }
+}

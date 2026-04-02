@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import {
   BookA,
   BookOpen,
+  BrainCircuit,
   Calendar,
   ChartArea,
   Github,
@@ -37,6 +38,12 @@ const data = {
       title: "Timetable",
       url: `/timetable/${APP_CONFIG.currentTerm}`,
       icon: Calendar,
+      isCollapsible: false,
+    },
+    {
+      title: "AI Module Recommender",
+      url: "/recommender",
+      icon: BrainCircuit,
       isCollapsible: false,
     },
     {

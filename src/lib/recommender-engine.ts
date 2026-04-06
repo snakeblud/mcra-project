@@ -12,6 +12,7 @@ export type RecommendInput = {
   interests: string;
   preference: LearningPreference;
   hasTranscript: boolean;
+  transcriptModulesTaken?: ModuleCode[];
 };
 
 export type RecommendedModule = {
@@ -28,9 +29,113 @@ export type RecommendationResult = {
   jobRoleDetected: string;
   currentSkills: string[];
   skillGaps: string[];
+  transcriptModulesTaken: ModuleCode[];
   recommendedModules: RecommendedModule[];
   learningPathSummary: string;
 };
+
+function escapeForRegex(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function candidateVariants(raw: string): string[] {
+  const cleaned = raw.toUpperCase().replace(/[^A-Z0-9-]/g, "");
+  if (!cleaned) return [];
+
+  const variants = new Set<string>();
+  variants.add(cleaned);
+  variants.add(cleaned.replace(/-/g, ""));
+
+  if (cleaned.startsWith("COR") && !cleaned.startsWith("COR-")) {
+    variants.add(`COR-${cleaned.slice(3)}`);
+  }
+
+  if (cleaned.startsWith("COR-")) {
+    variants.add(`COR${cleaned.slice(4)}`);
+  }
+
+  return Array.from(variants);
+}
+
+const ROMAN_TO_ARABIC: Record<string, string> = {
+  I: "1",
+  II: "2",
+  III: "3",
+  IV: "4",
+  V: "5",
+  VI: "6",
+  VII: "7",
+  VIII: "8",
+  IX: "9",
+  X: "10",
+};
+
+function normaliseRomanNumerals(value: string): string {
+  return value.replace(/\b(X|IX|VIII|VII|VI|V|IV|III|II|I)\b/g, (match) => {
+    return ROMAN_TO_ARABIC[match] ?? match;
+  });
+}
+
+function normaliseText(value: string): string {
+  return normaliseRomanNumerals(
+    value
+    .toUpperCase()
+    .replace(/[^A-Z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim(),
+  );
+}
+
+export function extractTakenModulesFromTranscriptText(
+  transcriptText: string,
+  moduleBank: ModuleBank,
+): ModuleCode[] {
+  const knownCodes = Object.keys(moduleBank) as ModuleCode[];
+  if (knownCodes.length === 0) return [];
+
+  const flexibleCodePatterns = knownCodes.map((code) => {
+    const escaped = escapeForRegex(code.toUpperCase());
+    return escaped
+      .replace(/-/g, "[-\\s]?")
+      .replace(/([A-Z])(?=\d)/g, "$1[-\\s]?");
+  });
+
+  const transcriptUpper = transcriptText.toUpperCase();
+  const normalisedTranscript = normaliseText(transcriptText);
+  const matched = new Set<ModuleCode>();
+
+  for (const pattern of flexibleCodePatterns) {
+    const regex = new RegExp(`\\b${pattern}\\b`, "g");
+    const hits = transcriptUpper.match(regex);
+    if (!hits) continue;
+
+    for (const raw of hits) {
+      const variants = candidateVariants(raw);
+      const resolved = variants.find((candidate) =>
+        Object.prototype.hasOwnProperty.call(moduleBank, candidate),
+      );
+
+      if (resolved) {
+        matched.add(resolved as ModuleCode);
+      }
+    }
+  }
+
+  // Fallback: match by module name when code formatting is inconsistent in transcript text.
+  for (const code of knownCodes) {
+    const moduleName = moduleBank[code]?.name;
+    if (!moduleName) continue;
+
+    const normalisedName = normaliseText(moduleName);
+    if (normalisedName.length < 8) continue;
+
+    if (normalisedTranscript.includes(normalisedName)) {
+      matched.add(code);
+    }
+  }
+
+  return Array.from(matched);
+}
 
 // ─── Module skills mapping ────────────────────────────────────────────────────
 
@@ -114,6 +219,28 @@ const MODULE_SCHEDULE: Record<string, { year: Year; term: Term }> = {
   CS461: { year: "4", term: "Term 1" },
   IS446: { year: "4", term: "Term 2" },
 };
+
+type ScheduleSlot = { year: Year; term: Term };
+
+function compareSchedule(a: ScheduleSlot, b: ScheduleSlot): number {
+  const yearDiff = parseInt(a.year, 10) - parseInt(b.year, 10);
+  if (yearDiff !== 0) return yearDiff;
+  return terms.indexOf(a.term) - terms.indexOf(b.term);
+}
+
+function getLatestCompletedSlot(
+  transcriptModulesTaken: ModuleCode[],
+): ScheduleSlot | null {
+  const takenSlots = transcriptModulesTaken
+    .map((code) => MODULE_SCHEDULE[code])
+    .filter((slot): slot is ScheduleSlot => !!slot);
+
+  if (takenSlots.length === 0) return null;
+
+  return takenSlots.reduce((latest, slot) =>
+    compareSchedule(slot, latest) > 0 ? slot : latest,
+  );
+}
 
 // ─── Job role definitions ─────────────────────────────────────────────────────
 
@@ -337,7 +464,21 @@ export function generateRecommendations(
   const jobKey = detectJobRole(input.jobRole);
   const profile = JOB_PROFILES[jobKey]!;
 
-  const currentSkills = parseInterests(input.interests);
+  const transcriptModulesTaken = Array.from(
+    new Set(
+      (input.transcriptModulesTaken ?? []).filter((code) =>
+        Object.prototype.hasOwnProperty.call(moduleBank, code),
+      ),
+    ),
+  ) as ModuleCode[];
+
+  const transcriptSkills = transcriptModulesTaken.flatMap(
+    (code) => MODULE_SKILLS[code] ?? [],
+  );
+  const latestCompletedSlot = getLatestCompletedSlot(transcriptModulesTaken);
+  const currentSkills = Array.from(
+    new Set([...parseInterests(input.interests), ...transcriptSkills]),
+  );
 
   // Skill gaps = what the job needs that the student hasn't mentioned
   const skillGaps = profile.requiredSkills.filter(
@@ -357,10 +498,19 @@ export function generateRecommendations(
         "COR1307",
       ];
 
-  const uniqueCodes = [...new Set(allCodes)];
+  const uniqueCodes = [...new Set(allCodes)].filter(
+    (code) => !transcriptModulesTaken.includes(code as ModuleCode),
+  );
+
+  const futureCodes = uniqueCodes.filter((code) => {
+    if (!latestCompletedSlot) return true;
+    const schedule = MODULE_SCHEDULE[code];
+    if (!schedule) return true;
+    return compareSchedule(schedule, latestCompletedSlot) > 0;
+  });
 
   // Build recommended module list, filtering to only what's in the module bank
-  const recommendedModules: RecommendedModule[] = uniqueCodes
+  const recommendedModules: RecommendedModule[] = futureCodes
     .filter((code) => !!moduleBank[code as ModuleCode])
     .map((code) => {
       const schedule = MODULE_SCHEDULE[code] ?? { year: "2" as Year, term: "Term 1" as Term };
@@ -395,6 +545,7 @@ export function generateRecommendations(
         ? currentSkills.slice(0, 8)
         : ["General Academic Foundation", "Problem Solving", "Academic Research"],
     skillGaps: skillGaps.slice(0, 7),
+    transcriptModulesTaken,
     recommendedModules,
     learningPathSummary: profile.learningPathSummary(input.preference),
   };

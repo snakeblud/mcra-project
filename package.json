@@ -2,7 +2,6 @@
   "name": "smu-mods-v2",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.4.1",
   "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
@@ -49,6 +48,7 @@
     "next": "15.3.6",
     "next-themes": "^0.4.6",
     "nuqs": "^2.4.3",
+    "pdfjs-dist": "^5.6.205",
     "posthog-js": "^1.258.5",
     "prettier": "^3.5.3",
     "qrcode.react": "^4.2.0",

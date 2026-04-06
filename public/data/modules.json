@@ -199,7 +199,7 @@
   },
   "IS213": {
     "moduleCode": "IS213",
-    "name": "Enterprise Solution Development 2",
+    "name": "Enterprise Solution Development",
     "credit": 1,
     "description": "Building on IS210, this course covers advanced enterprise application development including microservices, cloud computing, and DevOps practices.",
     "terms": ["Term 2", "Term 3A"],

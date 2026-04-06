@@ -1,105 +1,7288 @@
 {
   "IS112": {
-    "instructors": ["PATRICK HUNG", "GAN KENG SOON"],
+    "instructors": [
+      "PATRICK HUNG",
+      "GAN KENG SOON"
+    ],
     "records": [
-      { "instructor": "PATRICK HUNG", "term": "2024/25 Term 1", "section": "G1", "window": 1, "befVac": 42, "aftVac": 30, "minBid": 1, "medBid": 2 },
-      { "instructor": "PATRICK HUNG", "term": "2024/25 Term 1", "section": "G1", "window": 2, "befVac": 22, "aftVac": 14, "minBid": 4, "medBid": 10 },
-      { "instructor": "PATRICK HUNG", "term": "2024/25 Term 1", "section": "G1", "window": 3, "befVac": 10, "aftVac": 3, "minBid": 12, "medBid": 22 },
-      { "instructor": "PATRICK HUNG", "term": "2024/25 Term 2", "section": "G1", "window": 1, "befVac": 40, "aftVac": 28, "minBid": 1, "medBid": 3 },
-      { "instructor": "PATRICK HUNG", "term": "2024/25 Term 2", "section": "G1", "window": 2, "befVac": 20, "aftVac": 11, "minBid": 5, "medBid": 12 },
-      { "instructor": "PATRICK HUNG", "term": "2024/25 Term 2", "section": "G1", "window": 3, "befVac": 8, "aftVac": 2, "minBid": 18, "medBid": 30 },
-      { "instructor": "PATRICK HUNG", "term": "2023/24 Term 1", "section": "G1", "window": 1, "befVac": 44, "aftVac": 32, "minBid": 1, "medBid": 2 },
-      { "instructor": "PATRICK HUNG", "term": "2023/24 Term 1", "section": "G1", "window": 2, "befVac": 24, "aftVac": 16, "minBid": 3, "medBid": 8 },
-      { "instructor": "PATRICK HUNG", "term": "2023/24 Term 1", "section": "G1", "window": 3, "befVac": 11, "aftVac": 4, "minBid": 9, "medBid": 17 },
-      { "instructor": "PATRICK HUNG", "term": "2023/24 Term 2", "section": "G1", "window": 1, "befVac": 41, "aftVac": 29, "minBid": 1, "medBid": 2 },
-      { "instructor": "PATRICK HUNG", "term": "2023/24 Term 2", "section": "G1", "window": 2, "befVac": 21, "aftVac": 13, "minBid": 4, "medBid": 9 },
-      { "instructor": "PATRICK HUNG", "term": "2023/24 Term 2", "section": "G1", "window": 3, "befVac": 9, "aftVac": 2, "minBid": 14, "medBid": 26 },
-      { "instructor": "GAN KENG SOON", "term": "2024/25 Term 1", "section": "G3", "window": 1, "befVac": 38, "aftVac": 30, "minBid": 1, "medBid": 1 },
-      { "instructor": "GAN KENG SOON", "term": "2024/25 Term 1", "section": "G3", "window": 2, "befVac": 18, "aftVac": 12, "minBid": 2, "medBid": 5 },
-      { "instructor": "GAN KENG SOON", "term": "2024/25 Term 1", "section": "G3", "window": 3, "befVac": 7, "aftVac": 2, "minBid": 6, "medBid": 12 },
-      { "instructor": "GAN KENG SOON", "term": "2023/24 Term 1", "section": "G3", "window": 1, "befVac": 40, "aftVac": 32, "minBid": 1, "medBid": 1 },
-      { "instructor": "GAN KENG SOON", "term": "2023/24 Term 1", "section": "G3", "window": 2, "befVac": 20, "aftVac": 13, "minBid": 2, "medBid": 4 },
-      { "instructor": "GAN KENG SOON", "term": "2023/24 Term 1", "section": "G3", "window": 3, "befVac": 8, "aftVac": 3, "minBid": 5, "medBid": 9 }
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 30,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 14,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 12,
+        "medBid": 22
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 28,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 11,
+        "minBid": 5,
+        "medBid": 12
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 2,
+        "minBid": 18,
+        "medBid": 30
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 32,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 16,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 4,
+        "minBid": 9,
+        "medBid": 17
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 29,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 13,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "PATRICK HUNG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 14,
+        "medBid": 26
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 30,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 18,
+        "aftVac": 12,
+        "minBid": 2,
+        "medBid": 5
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 7,
+        "aftVac": 2,
+        "minBid": 6,
+        "medBid": 12
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 32,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 13,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 3,
+        "minBid": 5,
+        "medBid": 9
+      }
     ]
   },
   "IS114": {
-    "instructors": ["KYONG JIN SHIM", "LIM EE PENG"],
+    "instructors": [
+      "KYONG JIN SHIM",
+      "LIM EE PENG"
+    ],
     "records": [
-      { "instructor": "KYONG JIN SHIM", "term": "2024/25 Term 1", "section": "G1", "window": 1, "befVac": 45, "aftVac": 32, "minBid": 2, "medBid": 6 },
-      { "instructor": "KYONG JIN SHIM", "term": "2024/25 Term 1", "section": "G1", "window": 2, "befVac": 26, "aftVac": 15, "minBid": 10, "medBid": 22 },
-      { "instructor": "KYONG JIN SHIM", "term": "2024/25 Term 1", "section": "G1", "window": 3, "befVac": 11, "aftVac": 2, "minBid": 28, "medBid": 48 },
-      { "instructor": "KYONG JIN SHIM", "term": "2024/25 Term 2", "section": "G2", "window": 1, "befVac": 43, "aftVac": 30, "minBid": 3, "medBid": 8 },
-      { "instructor": "KYONG JIN SHIM", "term": "2024/25 Term 2", "section": "G2", "window": 2, "befVac": 24, "aftVac": 13, "minBid": 12, "medBid": 26 },
-      { "instructor": "KYONG JIN SHIM", "term": "2024/25 Term 2", "section": "G2", "window": 3, "befVac": 9, "aftVac": 1, "minBid": 35, "medBid": 58 },
-      { "instructor": "KYONG JIN SHIM", "term": "2023/24 Term 1", "section": "G1", "window": 1, "befVac": 44, "aftVac": 31, "minBid": 2, "medBid": 5 },
-      { "instructor": "KYONG JIN SHIM", "term": "2023/24 Term 1", "section": "G1", "window": 2, "befVac": 25, "aftVac": 14, "minBid": 8, "medBid": 18 },
-      { "instructor": "KYONG JIN SHIM", "term": "2023/24 Term 1", "section": "G1", "window": 3, "befVac": 10, "aftVac": 2, "minBid": 22, "medBid": 40 },
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 1", "section": "G3", "window": 1, "befVac": 40, "aftVac": 30, "minBid": 1, "medBid": 3 },
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 1", "section": "G3", "window": 2, "befVac": 22, "aftVac": 14, "minBid": 4, "medBid": 10 },
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 1", "section": "G3", "window": 3, "befVac": 9, "aftVac": 3, "minBid": 14, "medBid": 25 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 2", "section": "G3", "window": 1, "befVac": 38, "aftVac": 28, "minBid": 1, "medBid": 2 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 2", "section": "G3", "window": 2, "befVac": 20, "aftVac": 13, "minBid": 3, "medBid": 8 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 2", "section": "G3", "window": 3, "befVac": 8, "aftVac": 2, "minBid": 10, "medBid": 19 }
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 32,
+        "minBid": 2,
+        "medBid": 6
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 15,
+        "minBid": 10,
+        "medBid": 22
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 28,
+        "medBid": 48
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 30,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 13,
+        "minBid": 12,
+        "medBid": 26
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 1,
+        "minBid": 35,
+        "medBid": 58
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 31,
+        "minBid": 2,
+        "medBid": 5
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 14,
+        "minBid": 8,
+        "medBid": 18
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 22,
+        "medBid": 40
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 30,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 14,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 3,
+        "minBid": 14,
+        "medBid": 25
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 28,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 13,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 2,
+        "minBid": 10,
+        "medBid": 19
+      }
     ]
   },
   "IS212": {
-    "instructors": ["ALAN GOH", "DAVID CHEW"],
+    "instructors": [
+      "ALAN GOH",
+      "DAVID CHEW"
+    ],
     "records": [
-      { "instructor": "ALAN GOH", "term": "2024/25 Term 1", "section": "G1", "window": 1, "befVac": 35, "aftVac": 22, "minBid": 5, "medBid": 14 },
-      { "instructor": "ALAN GOH", "term": "2024/25 Term 1", "section": "G1", "window": 2, "befVac": 18, "aftVac": 9, "minBid": 18, "medBid": 35 },
-      { "instructor": "ALAN GOH", "term": "2024/25 Term 1", "section": "G1", "window": 3, "befVac": 6, "aftVac": 1, "minBid": 45, "medBid": 72 },
-      { "instructor": "ALAN GOH", "term": "2024/25 Term 2", "section": "G2", "window": 1, "befVac": 33, "aftVac": 20, "minBid": 6, "medBid": 16 },
-      { "instructor": "ALAN GOH", "term": "2024/25 Term 2", "section": "G2", "window": 2, "befVac": 16, "aftVac": 7, "minBid": 22, "medBid": 42 },
-      { "instructor": "ALAN GOH", "term": "2024/25 Term 2", "section": "G2", "window": 3, "befVac": 5, "aftVac": 1, "minBid": 55, "medBid": 88 },
-      { "instructor": "ALAN GOH", "term": "2023/24 Term 1", "section": "G1", "window": 1, "befVac": 36, "aftVac": 23, "minBid": 4, "medBid": 11 },
-      { "instructor": "ALAN GOH", "term": "2023/24 Term 1", "section": "G1", "window": 2, "befVac": 19, "aftVac": 10, "minBid": 15, "medBid": 30 },
-      { "instructor": "ALAN GOH", "term": "2023/24 Term 1", "section": "G1", "window": 3, "befVac": 7, "aftVac": 1, "minBid": 38, "medBid": 62 },
-      { "instructor": "ALAN GOH", "term": "2023/24 Term 2", "section": "G2", "window": 1, "befVac": 34, "aftVac": 21, "minBid": 5, "medBid": 13 },
-      { "instructor": "ALAN GOH", "term": "2023/24 Term 2", "section": "G2", "window": 2, "befVac": 17, "aftVac": 8, "minBid": 20, "medBid": 38 },
-      { "instructor": "ALAN GOH", "term": "2023/24 Term 2", "section": "G2", "window": 3, "befVac": 5, "aftVac": 1, "minBid": 50, "medBid": 80 },
-      { "instructor": "DAVID CHEW", "term": "2024/25 Term 1", "section": "G3", "window": 1, "befVac": 30, "aftVac": 22, "minBid": 2, "medBid": 6 },
-      { "instructor": "DAVID CHEW", "term": "2024/25 Term 1", "section": "G3", "window": 2, "befVac": 15, "aftVac": 9, "minBid": 6, "medBid": 14 },
-      { "instructor": "DAVID CHEW", "term": "2024/25 Term 1", "section": "G3", "window": 3, "befVac": 5, "aftVac": 1, "minBid": 18, "medBid": 32 },
-      { "instructor": "DAVID CHEW", "term": "2023/24 Term 1", "section": "G3", "window": 1, "befVac": 32, "aftVac": 24, "minBid": 1, "medBid": 4 },
-      { "instructor": "DAVID CHEW", "term": "2023/24 Term 1", "section": "G3", "window": 2, "befVac": 16, "aftVac": 10, "minBid": 4, "medBid": 10 },
-      { "instructor": "DAVID CHEW", "term": "2023/24 Term 1", "section": "G3", "window": 3, "befVac": 6, "aftVac": 2, "minBid": 12, "medBid": 24 }
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 35,
+        "aftVac": 22,
+        "minBid": 5,
+        "medBid": 14
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 18,
+        "aftVac": 9,
+        "minBid": 18,
+        "medBid": 35
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 6,
+        "aftVac": 1,
+        "minBid": 45,
+        "medBid": 72
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 33,
+        "aftVac": 20,
+        "minBid": 6,
+        "medBid": 16
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 16,
+        "aftVac": 7,
+        "minBid": 22,
+        "medBid": 42
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 5,
+        "aftVac": 1,
+        "minBid": 55,
+        "medBid": 88
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 36,
+        "aftVac": 23,
+        "minBid": 4,
+        "medBid": 11
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 19,
+        "aftVac": 10,
+        "minBid": 15,
+        "medBid": 30
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 7,
+        "aftVac": 1,
+        "minBid": 38,
+        "medBid": 62
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 34,
+        "aftVac": 21,
+        "minBid": 5,
+        "medBid": 13
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 17,
+        "aftVac": 8,
+        "minBid": 20,
+        "medBid": 38
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 5,
+        "aftVac": 1,
+        "minBid": 50,
+        "medBid": 80
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 30,
+        "aftVac": 22,
+        "minBid": 2,
+        "medBid": 6
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 15,
+        "aftVac": 9,
+        "minBid": 6,
+        "medBid": 14
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 5,
+        "aftVac": 1,
+        "minBid": 18,
+        "medBid": 32
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 32,
+        "aftVac": 24,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 16,
+        "aftVac": 10,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 6,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 24
+      }
     ]
   },
   "CS440": {
-    "instructors": ["LIM EE PENG"],
+    "instructors": [
+      "LIM EE PENG"
+    ],
     "records": [
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 1", "section": "G1", "window": 1, "befVac": 50, "aftVac": 32, "minBid": 8, "medBid": 22 },
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 1", "section": "G1", "window": 2, "befVac": 30, "aftVac": 16, "minBid": 28, "medBid": 52 },
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 1", "section": "G1", "window": 3, "befVac": 12, "aftVac": 1, "minBid": 62, "medBid": 95 },
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 2", "section": "G1", "window": 1, "befVac": 48, "aftVac": 30, "minBid": 10, "medBid": 26 },
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 2", "section": "G1", "window": 2, "befVac": 28, "aftVac": 14, "minBid": 32, "medBid": 58 },
-      { "instructor": "LIM EE PENG", "term": "2024/25 Term 2", "section": "G1", "window": 3, "befVac": 10, "aftVac": 1, "minBid": 70, "medBid": 102 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 1", "section": "G1", "window": 1, "befVac": 50, "aftVac": 33, "minBid": 7, "medBid": 18 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 1", "section": "G1", "window": 2, "befVac": 32, "aftVac": 18, "minBid": 24, "medBid": 46 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 1", "section": "G1", "window": 3, "befVac": 14, "aftVac": 2, "minBid": 55, "medBid": 85 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 2", "section": "G1", "window": 1, "befVac": 46, "aftVac": 29, "minBid": 9, "medBid": 20 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 2", "section": "G1", "window": 2, "befVac": 27, "aftVac": 15, "minBid": 26, "medBid": 50 },
-      { "instructor": "LIM EE PENG", "term": "2023/24 Term 2", "section": "G1", "window": 3, "befVac": 11, "aftVac": 2, "minBid": 58, "medBid": 90 }
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 50,
+        "aftVac": 32,
+        "minBid": 8,
+        "medBid": 22
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 30,
+        "aftVac": 16,
+        "minBid": 28,
+        "medBid": 52
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 1,
+        "minBid": 62,
+        "medBid": 95
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 30,
+        "minBid": 10,
+        "medBid": 26
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 14,
+        "minBid": 32,
+        "medBid": 58
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 1,
+        "minBid": 70,
+        "medBid": 102
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 50,
+        "aftVac": 33,
+        "minBid": 7,
+        "medBid": 18
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 32,
+        "aftVac": 18,
+        "minBid": 24,
+        "medBid": 46
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 2,
+        "minBid": 55,
+        "medBid": 85
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 46,
+        "aftVac": 29,
+        "minBid": 9,
+        "medBid": 20
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 15,
+        "minBid": 26,
+        "medBid": 50
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 58,
+        "medBid": 90
+      }
     ]
   },
   "IS216": {
-    "instructors": ["PETER TAN", "SARAH WONG"],
+    "instructors": [
+      "PETER TAN",
+      "SARAH WONG"
+    ],
     "records": [
-      { "instructor": "PETER TAN", "term": "2024/25 Term 2", "section": "G1", "window": 1, "befVac": 38, "aftVac": 26, "minBid": 4, "medBid": 12 },
-      { "instructor": "PETER TAN", "term": "2024/25 Term 2", "section": "G1", "window": 2, "befVac": 20, "aftVac": 11, "minBid": 14, "medBid": 28 },
-      { "instructor": "PETER TAN", "term": "2024/25 Term 2", "section": "G1", "window": 3, "befVac": 8, "aftVac": 1, "minBid": 32, "medBid": 55 },
-      { "instructor": "PETER TAN", "term": "2024/25 Term 1", "section": "G1", "window": 1, "befVac": 36, "aftVac": 25, "minBid": 3, "medBid": 9 },
-      { "instructor": "PETER TAN", "term": "2024/25 Term 1", "section": "G1", "window": 2, "befVac": 18, "aftVac": 10, "minBid": 10, "medBid": 22 },
-      { "instructor": "PETER TAN", "term": "2024/25 Term 1", "section": "G1", "window": 3, "befVac": 7, "aftVac": 1, "minBid": 25, "medBid": 44 },
-      { "instructor": "PETER TAN", "term": "2023/24 Term 2", "section": "G1", "window": 1, "befVac": 40, "aftVac": 28, "minBid": 2, "medBid": 7 },
-      { "instructor": "PETER TAN", "term": "2023/24 Term 2", "section": "G1", "window": 2, "befVac": 22, "aftVac": 12, "minBid": 8, "medBid": 18 },
-      { "instructor": "PETER TAN", "term": "2023/24 Term 2", "section": "G1", "window": 3, "befVac": 9, "aftVac": 2, "minBid": 20, "medBid": 38 },
-      { "instructor": "SARAH WONG", "term": "2024/25 Term 2", "section": "G2", "window": 1, "befVac": 36, "aftVac": 27, "minBid": 1, "medBid": 4 },
-      { "instructor": "SARAH WONG", "term": "2024/25 Term 2", "section": "G2", "window": 2, "befVac": 18, "aftVac": 11, "minBid": 5, "medBid": 14 },
-      { "instructor": "SARAH WONG", "term": "2024/25 Term 2", "section": "G2", "window": 3, "befVac": 6, "aftVac": 2, "minBid": 14, "medBid": 28 },
-      { "instructor": "SARAH WONG", "term": "2023/24 Term 2", "section": "G2", "window": 1, "befVac": 34, "aftVac": 26, "minBid": 1, "medBid": 3 },
-      { "instructor": "SARAH WONG", "term": "2023/24 Term 2", "section": "G2", "window": 2, "befVac": 17, "aftVac": 10, "minBid": 4, "medBid": 11 },
-      { "instructor": "SARAH WONG", "term": "2023/24 Term 2", "section": "G2", "window": 3, "befVac": 5, "aftVac": 1, "minBid": 10, "medBid": 22 }
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 26,
+        "minBid": 4,
+        "medBid": 12
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 11,
+        "minBid": 14,
+        "medBid": 28
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 1,
+        "minBid": 32,
+        "medBid": 55
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 36,
+        "aftVac": 25,
+        "minBid": 3,
+        "medBid": 9
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 18,
+        "aftVac": 10,
+        "minBid": 10,
+        "medBid": 22
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 7,
+        "aftVac": 1,
+        "minBid": 25,
+        "medBid": 44
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 28,
+        "minBid": 2,
+        "medBid": 7
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 12,
+        "minBid": 8,
+        "medBid": 18
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 20,
+        "medBid": 38
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 36,
+        "aftVac": 27,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 18,
+        "aftVac": 11,
+        "minBid": 5,
+        "medBid": 14
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 6,
+        "aftVac": 2,
+        "minBid": 14,
+        "medBid": 28
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 34,
+        "aftVac": 26,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 17,
+        "aftVac": 10,
+        "minBid": 4,
+        "medBid": 11
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 5,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 22
+      }
+    ]
+  },
+  "IS113": {
+    "instructors": [
+      "PETER TAN"
+    ],
+    "records": [
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 28,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 13,
+        "minBid": 18,
+        "medBid": 35
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 4,
+        "minBid": 16,
+        "medBid": 33
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 37,
+        "minBid": 4,
+        "medBid": 6
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 15,
+        "minBid": 10,
+        "medBid": 17
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 18,
+        "medBid": 64
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 12,
+        "minBid": 15,
+        "medBid": 31
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 45,
+        "medBid": 55
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 50,
+        "aftVac": 26,
+        "minBid": 4,
+        "medBid": 8
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 17,
+        "minBid": 12,
+        "medBid": 20
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 4,
+        "minBid": 23,
+        "medBid": 32
+      }
+    ]
+  },
+  "IS210": {
+    "instructors": [
+      "BENJAMIN LIM"
+    ],
+    "records": [
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 28,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 13,
+        "minBid": 18,
+        "medBid": 35
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 4,
+        "minBid": 16,
+        "medBid": 33
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 37,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 12,
+        "minBid": 15,
+        "medBid": 30
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 44,
+        "medBid": 54
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 12,
+        "minBid": 15,
+        "medBid": 31
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 45,
+        "medBid": 55
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 35,
+        "aftVac": 30,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 10,
+        "minBid": 13,
+        "medBid": 27
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 39,
+        "medBid": 59
+      }
+    ]
+  },
+  "IS211": {
+    "instructors": [
+      "LAURA YOUNG"
+    ],
+    "records": [
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 33,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 12,
+        "minBid": 20,
+        "medBid": 32
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 2,
+        "minBid": 41,
+        "medBid": 51
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 35,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 14,
+        "minBid": 8,
+        "medBid": 13
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 47,
+        "medBid": 58
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 35,
+        "minBid": 3,
+        "medBid": 4
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 14,
+        "minBid": 7,
+        "medBid": 12
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 46,
+        "medBid": 56
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 47,
+        "aftVac": 37,
+        "minBid": 4,
+        "medBid": 6
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 15,
+        "minBid": 10,
+        "medBid": 16
+      },
+      {
+        "instructor": "LAURA YOUNG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 18,
+        "medBid": 63
+      }
+    ]
+  },
+  "IS213": {
+    "instructors": [
+      "BENJAMIN LIM",
+      "JASON LEE"
+    ],
+    "records": [
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 30,
+        "minBid": 6,
+        "medBid": 17
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 17,
+        "aftVac": 7,
+        "minBid": 32,
+        "medBid": 57
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 1,
+        "minBid": 72,
+        "medBid": 89
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 34,
+        "aftVac": 24,
+        "minBid": 14,
+        "medBid": 25
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 17,
+        "aftVac": 8,
+        "minBid": 42,
+        "medBid": 60
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 69,
+        "medBid": 80
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 1,
+        "befVac": 31,
+        "aftVac": 26,
+        "minBid": 7,
+        "medBid": 20
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 2,
+        "befVac": 19,
+        "aftVac": 8,
+        "minBid": 35,
+        "medBid": 61
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 78,
+        "medBid": 93
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 1,
+        "befVac": 33,
+        "aftVac": 23,
+        "minBid": 13,
+        "medBid": 24
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 7,
+        "minBid": 39,
+        "medBid": 56
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 65,
+        "medBid": 77
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 27,
+        "minBid": 13,
+        "medBid": 13
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 12,
+        "minBid": 24,
+        "medBid": 48
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 6,
+        "aftVac": 3,
+        "minBid": 60,
+        "medBid": 82
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 28,
+        "minBid": 6,
+        "medBid": 14
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 19,
+        "aftVac": 10,
+        "minBid": 21,
+        "medBid": 69
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 7,
+        "aftVac": 1,
+        "minBid": 81,
+        "medBid": 87
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 3A",
+        "section": "G2",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 20,
+        "minBid": 10,
+        "medBid": 20
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 3A",
+        "section": "G2",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 13,
+        "minBid": 31,
+        "medBid": 47
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 3A",
+        "section": "G2",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 54,
+        "medBid": 70
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 3A",
+        "section": "G2",
+        "window": 1,
+        "befVac": 32,
+        "aftVac": 21,
+        "minBid": 9,
+        "medBid": 21
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 3A",
+        "section": "G2",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 9,
+        "minBid": 39,
+        "medBid": 65
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 3A",
+        "section": "G2",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 82,
+        "medBid": 99
+      }
+    ]
+  },
+  "IS214": {
+    "instructors": [
+      "WINSTON KOH"
+    ],
+    "records": [
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 30,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 14,
+        "minBid": 19,
+        "medBid": 24
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 19,
+        "medBid": 37
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 39,
+        "aftVac": 27,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 12,
+        "minBid": 16,
+        "medBid": 32
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 47,
+        "medBid": 57
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 39,
+        "aftVac": 28,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 13,
+        "minBid": 17,
+        "medBid": 33
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 48,
+        "medBid": 59
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 36,
+        "aftVac": 25,
+        "minBid": 3,
+        "medBid": 7
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 11,
+        "minBid": 14,
+        "medBid": 29
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 42,
+        "medBid": 62
+      }
+    ]
+  },
+  "IS215": {
+    "instructors": [
+      "RICHARD LIM"
+    ],
+    "records": [
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 49,
+        "aftVac": 25,
+        "minBid": 4,
+        "medBid": 7
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 16,
+        "minBid": 11,
+        "medBid": 19
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 21,
+        "medBid": 29
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 37,
+        "aftVac": 28,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 18,
+        "minBid": 14,
+        "medBid": 23
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 4,
+        "minBid": 27,
+        "medBid": 36
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 36,
+        "aftVac": 27,
+        "minBid": 5,
+        "medBid": 8
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 18,
+        "minBid": 14,
+        "medBid": 22
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 4,
+        "minBid": 26,
+        "medBid": 35
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 39,
+        "aftVac": 29,
+        "minBid": 6,
+        "medBid": 10
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 19,
+        "aftVac": 10,
+        "minBid": 16,
+        "medBid": 26
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 5,
+        "minBid": 33,
+        "medBid": 42
+      }
+    ]
+  },
+  "IS412": {
+    "instructors": [
+      "JASON LEE"
+    ],
+    "records": [
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 31,
+        "minBid": 9,
+        "medBid": 18
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 12,
+        "minBid": 28,
+        "medBid": 44
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 49,
+        "medBid": 95
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 35,
+        "aftVac": 23,
+        "minBid": 10,
+        "medBid": 24
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 10,
+        "minBid": 43,
+        "medBid": 70
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 46,
+        "medBid": 72
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 21,
+        "minBid": 11,
+        "medBid": 20
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 13,
+        "minBid": 33,
+        "medBid": 49
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 55,
+        "medBid": 71
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 32,
+        "aftVac": 21,
+        "minBid": 9,
+        "medBid": 21
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 9,
+        "minBid": 38,
+        "medBid": 65
+      },
+      {
+        "instructor": "JASON LEE",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 82,
+        "medBid": 99
+      }
+    ]
+  },
+  "IS442": {
+    "instructors": [
+      "ALAN GOH"
+    ],
+    "records": [
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 37,
+        "aftVac": 25,
+        "minBid": 12,
+        "medBid": 27
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 11,
+        "minBid": 48,
+        "medBid": 59
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 53,
+        "medBid": 77
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 34,
+        "aftVac": 23,
+        "minBid": 10,
+        "medBid": 24
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 10,
+        "minBid": 42,
+        "medBid": 70
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 45,
+        "medBid": 72
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 35,
+        "aftVac": 23,
+        "minBid": 10,
+        "medBid": 24
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 10,
+        "minBid": 43,
+        "medBid": 71
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 47,
+        "medBid": 73
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 32,
+        "aftVac": 21,
+        "minBid": 8,
+        "medBid": 21
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 9,
+        "minBid": 38,
+        "medBid": 65
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 82,
+        "medBid": 96
+      }
+    ]
+  },
+  "IS458": {
+    "instructors": [
+      "KYONG JIN SHIM"
+    ],
+    "records": [
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 27,
+        "minBid": 6,
+        "medBid": 13
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 19,
+        "aftVac": 10,
+        "minBid": 20,
+        "medBid": 68
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 7,
+        "aftVac": 1,
+        "minBid": 79,
+        "medBid": 87
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 39,
+        "aftVac": 26,
+        "minBid": 13,
+        "medBid": 13
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 12,
+        "minBid": 23,
+        "medBid": 46
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 6,
+        "aftVac": 3,
+        "minBid": 59,
+        "medBid": 81
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 29,
+        "minBid": 8,
+        "medBid": 16
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 11,
+        "minBid": 24,
+        "medBid": 39
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 2,
+        "minBid": 86,
+        "medBid": 91
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 37,
+        "aftVac": 24,
+        "minBid": 11,
+        "medBid": 26
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 11,
+        "minBid": 47,
+        "medBid": 57
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 52,
+        "medBid": 76
+      }
+    ]
+  },
+  "IS492": {
+    "instructors": [
+      "ALAN GOH"
+    ],
+    "records": [
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 28,
+        "minBid": 5,
+        "medBid": 15
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 13,
+        "minBid": 28,
+        "medBid": 52
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 7,
+        "aftVac": 1,
+        "minBid": 66,
+        "medBid": 86
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 36,
+        "aftVac": 26,
+        "minBid": 5,
+        "medBid": 28
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 18,
+        "aftVac": 9,
+        "minBid": 45,
+        "medBid": 64
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 1,
+        "minBid": 75,
+        "medBid": 84
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 39,
+        "aftVac": 27,
+        "minBid": 13,
+        "medBid": 13
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 12,
+        "minBid": 24,
+        "medBid": 47
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 6,
+        "aftVac": 3,
+        "minBid": 60,
+        "medBid": 81
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 28,
+        "minBid": 7,
+        "medBid": 14
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 19,
+        "aftVac": 10,
+        "minBid": 21,
+        "medBid": 69
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 7,
+        "aftVac": 1,
+        "minBid": 81,
+        "medBid": 88
+      }
+    ]
+  },
+  "IS446": {
+    "instructors": [
+      "DAVID CHEW"
+    ],
+    "records": [
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 33,
+        "aftVac": 21,
+        "minBid": 9,
+        "medBid": 22
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 9,
+        "minBid": 40,
+        "medBid": 66
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 84,
+        "medBid": 102
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 30,
+        "aftVac": 25,
+        "minBid": 7,
+        "medBid": 19
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 18,
+        "aftVac": 8,
+        "minBid": 34,
+        "medBid": 60
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 76,
+        "medBid": 92
+      }
+    ]
+  },
+  "CS101": {
+    "instructors": [
+      "HENRY CHANG",
+      "MICHELLE TAN"
+    ],
+    "records": [
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 46,
+        "aftVac": 33,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 16,
+        "minBid": 8,
+        "medBid": 20
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 1,
+        "minBid": 28,
+        "medBid": 47
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 31,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 15,
+        "minBid": 5,
+        "medBid": 16
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 22,
+        "medBid": 40
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 31,
+        "minBid": 5,
+        "medBid": 12
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 15,
+        "minBid": 6,
+        "medBid": 16
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 5,
+        "minBid": 23,
+        "medBid": 41
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 29,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 13,
+        "minBid": 18,
+        "medBid": 23
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 4,
+        "minBid": 17,
+        "medBid": 34
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 31,
+        "minBid": 5,
+        "medBid": 12
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 15,
+        "minBid": 6,
+        "medBid": 17
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 5,
+        "minBid": 24,
+        "medBid": 42
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 29,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 14,
+        "minBid": 18,
+        "medBid": 23
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 17,
+        "medBid": 35
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G3",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 29,
+        "minBid": 5,
+        "medBid": 10
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G3",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 14,
+        "minBid": 19,
+        "medBid": 24
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G3",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 18,
+        "medBid": 36
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 27,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 12,
+        "minBid": 16,
+        "medBid": 32
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 46,
+        "medBid": 56
+      }
+    ]
+  },
+  "CS102": {
+    "instructors": [
+      "HENRY CHANG",
+      "MICHELLE TAN"
+    ],
+    "records": [
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 46,
+        "aftVac": 35,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 14,
+        "minBid": 8,
+        "medBid": 13
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 48,
+        "medBid": 58
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 38,
+        "minBid": 4,
+        "medBid": 7
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 16,
+        "minBid": 11,
+        "medBid": 18
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 20,
+        "medBid": 27
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 29,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 14,
+        "minBid": 18,
+        "medBid": 23
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 17,
+        "medBid": 35
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 30,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 14,
+        "minBid": 19,
+        "medBid": 24
+      },
+      {
+        "instructor": "HENRY CHANG",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 20,
+        "medBid": 37
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 31,
+        "minBid": 5,
+        "medBid": 12
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 15,
+        "minBid": 6,
+        "medBid": 17
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 5,
+        "minBid": 24,
+        "medBid": 42
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 29,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 14,
+        "minBid": 18,
+        "medBid": 23
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G2",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 17,
+        "medBid": 35
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 3A",
+        "section": "G2",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 37,
+        "minBid": 4,
+        "medBid": 6
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 3A",
+        "section": "G2",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 16,
+        "minBid": 11,
+        "medBid": 17
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 3A",
+        "section": "G2",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 19,
+        "medBid": 27
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 3A",
+        "section": "G2",
+        "window": 1,
+        "befVac": 47,
+        "aftVac": 37,
+        "minBid": 4,
+        "medBid": 6
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 3A",
+        "section": "G2",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 15,
+        "minBid": 9,
+        "medBid": 16
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 3A",
+        "section": "G2",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 17,
+        "medBid": 62
+      }
+    ]
+  },
+  "CS206": {
+    "instructors": [
+      "MICHELLE TAN"
+    ],
+    "records": [
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 12,
+        "minBid": 15,
+        "medBid": 31
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 44,
+        "medBid": 54
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 50,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 6
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 10,
+        "minBid": 12,
+        "medBid": 26
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 38,
+        "medBid": 58
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 35,
+        "aftVac": 30,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 10,
+        "minBid": 13,
+        "medBid": 27
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 39,
+        "medBid": 59
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 35,
+        "minBid": 2,
+        "medBid": 5
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 19,
+        "aftVac": 18,
+        "minBid": 10,
+        "medBid": 23
+      },
+      {
+        "instructor": "MICHELLE TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 33,
+        "medBid": 52
+      }
+    ]
+  },
+  "CS301": {
+    "instructors": [
+      "STEVEN LIM"
+    ],
+    "records": [
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 32,
+        "minBid": 10,
+        "medBid": 20
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 13,
+        "minBid": 31,
+        "medBid": 47
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 54,
+        "medBid": 70
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 31,
+        "aftVac": 22,
+        "minBid": 12,
+        "medBid": 23
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 14,
+        "minBid": 37,
+        "medBid": 54
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 61,
+        "medBid": 75
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 31,
+        "aftVac": 22,
+        "minBid": 12,
+        "medBid": 22
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 14,
+        "minBid": 36,
+        "medBid": 52
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 60,
+        "medBid": 74
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 34,
+        "aftVac": 24,
+        "minBid": 14,
+        "medBid": 25
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 16,
+        "aftVac": 8,
+        "minBid": 41,
+        "medBid": 59
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 68,
+        "medBid": 79
+      }
+    ]
+  },
+  "CS461": {
+    "instructors": [
+      "STEVEN LIM"
+    ],
+    "records": [
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 25,
+        "minBid": 12,
+        "medBid": 27
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 12,
+        "minBid": 21,
+        "medBid": 44
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 3,
+        "minBid": 56,
+        "medBid": 79
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 29,
+        "minBid": 8,
+        "medBid": 16
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 11,
+        "minBid": 24,
+        "medBid": 38
+      },
+      {
+        "instructor": "STEVEN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 2,
+        "minBid": 85,
+        "medBid": 90
+      }
+    ]
+  },
+  "CS462": {
+    "instructors": [
+      "LIM EE PENG"
+    ],
+    "records": [
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 31,
+        "minBid": 7,
+        "medBid": 19
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 18,
+        "aftVac": 8,
+        "minBid": 34,
+        "medBid": 59
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 75,
+        "medBid": 91
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 33,
+        "aftVac": 23,
+        "minBid": 13,
+        "medBid": 24
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 7,
+        "minBid": 39,
+        "medBid": 57
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 66,
+        "medBid": 78
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 29,
+        "minBid": 5,
+        "medBid": 16
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 16,
+        "aftVac": 14,
+        "minBid": 30,
+        "medBid": 54
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 1,
+        "minBid": 69,
+        "medBid": 87
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 35,
+        "aftVac": 25,
+        "minBid": 4,
+        "medBid": 27
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 17,
+        "aftVac": 9,
+        "minBid": 44,
+        "medBid": 62
+      },
+      {
+        "instructor": "LIM EE PENG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 1,
+        "minBid": 72,
+        "medBid": 82
+      }
+    ]
+  },
+  "CS443": {
+    "instructors": [
+      "DAVID CHEW"
+    ],
+    "records": [
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 38,
+        "aftVac": 25,
+        "minBid": 12,
+        "medBid": 27
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 23,
+        "aftVac": 12,
+        "minBid": 21,
+        "medBid": 44
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 3,
+        "minBid": 56,
+        "medBid": 79
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 29,
+        "minBid": 8,
+        "medBid": 15
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 20,
+        "aftVac": 11,
+        "minBid": 24,
+        "medBid": 38
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 2,
+        "minBid": 85,
+        "medBid": 90
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 36,
+        "aftVac": 24,
+        "minBid": 11,
+        "medBid": 25
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 11,
+        "minBid": 45,
+        "medBid": 55
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 2,
+        "minBid": 49,
+        "medBid": 75
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 31,
+        "minBid": 9,
+        "medBid": 18
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 12,
+        "minBid": 28,
+        "medBid": 43
+      },
+      {
+        "instructor": "DAVID CHEW",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 49,
+        "medBid": 95
+      }
+    ]
+  },
+  "SE301": {
+    "instructors": [
+      "ALAN GOH"
+    ],
+    "records": [
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 29,
+        "minBid": 8,
+        "medBid": 16
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 21,
+        "aftVac": 11,
+        "minBid": 25,
+        "medBid": 39
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 2,
+        "minBid": 86,
+        "medBid": 91
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 31,
+        "minBid": 10,
+        "medBid": 19
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 12,
+        "minBid": 30,
+        "medBid": 45
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 51,
+        "medBid": 68
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 31,
+        "minBid": 9,
+        "medBid": 18
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 22,
+        "aftVac": 12,
+        "minBid": 29,
+        "medBid": 44
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 49,
+        "medBid": 95
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 30,
+        "aftVac": 21,
+        "minBid": 11,
+        "medBid": 21
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 13,
+        "minBid": 34,
+        "medBid": 50
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 57,
+        "medBid": 72
+      }
+    ]
+  },
+  "COR1301": {
+    "instructors": [
+      "CAROL NG",
+      "JAMES KOH"
+    ],
+    "records": [
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 32,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 17,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 3,
+        "minBid": 12,
+        "medBid": 21
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 63,
+        "aftVac": 49,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 15,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 10,
+        "medBid": 18
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 49,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 15,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 2,
+        "minBid": 10,
+        "medBid": 19
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 59,
+        "aftVac": 46,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 40,
+        "aftVac": 26,
+        "minBid": 2,
+        "medBid": 7
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 8,
+        "medBid": 16
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 60,
+        "aftVac": 50,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 34,
+        "aftVac": 24,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 4,
+        "medBid": 22
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 34,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 2,
+        "befVac": 37,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G3",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G3",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 33,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G3",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G3",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 2,
+        "befVac": 39,
+        "aftVac": 14,
+        "minBid": 4,
+        "medBid": 8
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G3",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 11
+      }
+    ]
+  },
+  "COR1305": {
+    "instructors": [
+      "JAMES KOH"
+    ],
+    "records": [
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 57,
+        "aftVac": 48,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 32,
+        "aftVac": 22,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 14,
+        "medBid": 19
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 62,
+        "aftVac": 51,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 35,
+        "aftVac": 25,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 5,
+        "medBid": 6
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 61,
+        "aftVac": 51,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 34,
+        "aftVac": 24,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 4,
+        "minBid": 4,
+        "medBid": 22
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 34,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 37,
+        "aftVac": 27,
+        "minBid": 4,
+        "medBid": 6
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 9
+      }
+    ]
+  },
+  "COR1306": {
+    "instructors": [
+      "WINSTON KOH"
+    ],
+    "records": [
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 52,
+        "aftVac": 40,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 35,
+        "aftVac": 23,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 5,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 36,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 32,
+        "aftVac": 20,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 4,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 20,
+        "minBid": 5,
+        "medBid": 12
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 4,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 33,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 30,
+        "aftVac": 18,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 3,
+        "minBid": 13,
+        "medBid": 22
+      }
+    ]
+  },
+  "COR1307": {
+    "instructors": [
+      "RICHARD LIM"
+    ],
+    "records": [
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 62,
+        "aftVac": 51,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 35,
+        "aftVac": 25,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 5,
+        "medBid": 6
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 35,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 38,
+        "aftVac": 27,
+        "minBid": 4,
+        "medBid": 7
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 5,
+        "minBid": 7,
+        "medBid": 9
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 34,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 37,
+        "aftVac": 27,
+        "minBid": 4,
+        "medBid": 6
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 9
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 38,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 15,
+        "minBid": 5,
+        "medBid": 8
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 12
+      }
+    ]
+  },
+  "COR1202": {
+    "instructors": [
+      "GRACE ONG"
+    ],
+    "records": [
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 50,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 15,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 2,
+        "minBid": 10,
+        "medBid": 19
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 59,
+        "aftVac": 46,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 40,
+        "aftVac": 27,
+        "minBid": 2,
+        "medBid": 7
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 8,
+        "medBid": 16
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 60,
+        "aftVac": 47,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 19,
+        "minBid": 3,
+        "medBid": 7
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 9,
+        "medBid": 17
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 56,
+        "aftVac": 43,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 37,
+        "aftVac": 25,
+        "minBid": 2,
+        "medBid": 5
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 6,
+        "minBid": 7,
+        "medBid": 14
+      }
+    ]
+  },
+  "COR1703": {
+    "instructors": [
+      "GAN KENG SOON"
+    ],
+    "records": [
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 49,
+        "aftVac": 38,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 21,
+        "minBid": 5,
+        "medBid": 7
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 4,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 61,
+        "aftVac": 50,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 34,
+        "aftVac": 24,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 4,
+        "medBid": 22
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 35,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 19,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 13,
+        "medBid": 17
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 33,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 8
+      }
+    ]
+  },
+  "COR1701": {
+    "instructors": [
+      "CAROL NG"
+    ],
+    "records": [
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 40,
+        "aftVac": 15,
+        "minBid": 4,
+        "medBid": 8
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 11
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 49,
+        "aftVac": 41,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 17,
+        "minBid": 5,
+        "medBid": 10
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 18,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 14
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 49,
+        "aftVac": 41,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 17,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 14
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 53,
+        "aftVac": 44,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 20,
+        "minBid": 1,
+        "medBid": 11
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 17
+      }
+    ]
+  },
+  "COR2201": {
+    "instructors": [
+      "GRACE ONG"
+    ],
+    "records": [
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 34,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 19,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 13,
+        "medBid": 17
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 35,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 16,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 11,
+        "medBid": 20
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 36,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 16,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 3,
+        "minBid": 11,
+        "medBid": 20
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 62,
+        "aftVac": 48,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 20,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 9,
+        "medBid": 17
+      }
+    ]
+  },
+  "COR2210": {
+    "instructors": [
+      "KYONG JIN SHIM"
+    ],
+    "records": [
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 55,
+        "aftVac": 46,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 30,
+        "aftVac": 21,
+        "minBid": 2,
+        "medBid": 12
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 13,
+        "medBid": 18
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 60,
+        "aftVac": 50,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 23,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 4,
+        "medBid": 21
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 59,
+        "aftVac": 49,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 23,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 4,
+        "medBid": 21
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 49,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 21,
+        "minBid": 5,
+        "medBid": 12
+      },
+      {
+        "instructor": "KYONG JIN SHIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 4,
+        "minBid": 4,
+        "medBid": 9
+      }
+    ]
+  },
+  "COR3001": {
+    "instructors": [
+      "JAMES KOH"
+    ],
+    "records": [
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 49,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 15,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 2,
+        "minBid": 10,
+        "medBid": 19
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 46,
+        "aftVac": 38,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 15,
+        "minBid": 5,
+        "medBid": 8
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 5,
+        "minBid": 9,
+        "medBid": 12
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 60,
+        "aftVac": 46,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 24,
+        "aftVac": 19,
+        "minBid": 3,
+        "medBid": 7
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 9,
+        "medBid": 16
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 50,
+        "aftVac": 41,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 18,
+        "minBid": 5,
+        "medBid": 10
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 18,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 14
+      }
+    ]
+  },
+  "COR2100": {
+    "instructors": [
+      "CAROL NG"
+    ],
+    "records": [
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 58,
+        "aftVac": 45,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 39,
+        "aftVac": 26,
+        "minBid": 2,
+        "medBid": 6
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 1,
+        "minBid": 8,
+        "medBid": 15
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 52,
+        "aftVac": 43,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 19,
+        "minBid": 6,
+        "medBid": 10
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 11,
+        "medBid": 16
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 54,
+        "aftVac": 42,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 24,
+        "minBid": 1,
+        "medBid": 5
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 18,
+        "aftVac": 5,
+        "minBid": 6,
+        "medBid": 13
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 56,
+        "aftVac": 46,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 21,
+        "minBid": 2,
+        "medBid": 12
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 13,
+        "medBid": 18
+      }
+    ]
+  },
+  "COR1100": {
+    "instructors": [
+      "RICHARD LIM"
+    ],
+    "records": [
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 47,
+        "aftVac": 39,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 16,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 6,
+        "minBid": 9,
+        "medBid": 13
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 52,
+        "aftVac": 43,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 19,
+        "minBid": 6,
+        "medBid": 10
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 8,
+        "aftVac": 2,
+        "minBid": 11,
+        "medBid": 16
+      }
+    ]
+  },
+  "COR3301": {
+    "instructors": [
+      "WINSTON KOH"
+    ],
+    "records": [
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 36,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 16,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 3,
+        "minBid": 11,
+        "medBid": 20
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 39,
+        "aftVac": 14,
+        "minBid": 4,
+        "medBid": 8
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 11
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 62,
+        "aftVac": 48,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 14,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 10,
+        "medBid": 18
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 47,
+        "aftVac": 40,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 16,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 6,
+        "minBid": 9,
+        "medBid": 13
+      }
+    ]
+  },
+  "COR3302": {
+    "instructors": [
+      "GAN KENG SOON"
+    ],
+    "records": [
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 33,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 33,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 30,
+        "aftVac": 18,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 3,
+        "minBid": 13,
+        "medBid": 17
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 36,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 38,
+        "aftVac": 28,
+        "minBid": 4,
+        "medBid": 7
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 5,
+        "minBid": 7,
+        "medBid": 10
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 35,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 16,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "GAN KENG SOON",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 11,
+        "medBid": 20
+      }
+    ]
+  },
+  "COR2630": {
+    "instructors": [
+      "GRACE ONG"
+    ],
+    "records": [
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 63,
+        "aftVac": 32,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 35,
+        "aftVac": 25,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 5,
+        "medBid": 7
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 34,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 30,
+        "aftVac": 18,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 13,
+        "medBid": 17
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 35,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 38,
+        "aftVac": 27,
+        "minBid": 4,
+        "medBid": 7
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 5,
+        "minBid": 7,
+        "medBid": 10
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 36,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 16,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 3,
+        "minBid": 11,
+        "medBid": 20
+      }
+    ]
+  },
+  "COR2640": {
+    "instructors": [
+      "JAMES KOH"
+    ],
+    "records": [
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 60,
+        "aftVac": 46,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 40,
+        "aftVac": 27,
+        "minBid": 2,
+        "medBid": 7
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 8,
+        "medBid": 16
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 50,
+        "aftVac": 42,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 18,
+        "minBid": 5,
+        "medBid": 10
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 18,
+        "aftVac": 1,
+        "minBid": 11,
+        "medBid": 15
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 49,
+        "aftVac": 41,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 17,
+        "minBid": 5,
+        "medBid": 10
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 18,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 14
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 54,
+        "aftVac": 45,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 30,
+        "aftVac": 20,
+        "minBid": 1,
+        "medBid": 11
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 17
+      }
+    ]
+  },
+  "COR-STAT1202": {
+    "instructors": [
+      "GRACE ONG"
+    ],
+    "records": [
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 38,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 40,
+        "aftVac": 15,
+        "minBid": 4,
+        "medBid": 8
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 12
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 50,
+        "aftVac": 41,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 18,
+        "minBid": 5,
+        "medBid": 10
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 18,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 15
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 49,
+        "aftVac": 41,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 17,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 14
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 53,
+        "aftVac": 44,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 20,
+        "minBid": 1,
+        "medBid": 11
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 17
+      }
+    ]
+  },
+  "COR-STAT1203": {
+    "instructors": [
+      "GRACE ONG"
+    ],
+    "records": [
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 32,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 17,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 3,
+        "minBid": 12,
+        "medBid": 21
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 63,
+        "aftVac": 49,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 14,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 10,
+        "medBid": 18
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 49,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 15,
+        "minBid": 3,
+        "medBid": 8
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 2,
+        "minBid": 10,
+        "medBid": 19
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 59,
+        "aftVac": 46,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 39,
+        "aftVac": 26,
+        "minBid": 2,
+        "medBid": 7
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 1,
+        "minBid": 8,
+        "medBid": 16
+      }
+    ]
+  },
+  "COR-IS1702": {
+    "instructors": [
+      "PETER TAN"
+    ],
+    "records": [
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 53,
+        "aftVac": 44,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 19,
+        "minBid": 1,
+        "medBid": 11
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 17
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 57,
+        "aftVac": 48,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 32,
+        "aftVac": 22,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 14,
+        "medBid": 20
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 57,
+        "aftVac": 47,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 22,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 13,
+        "medBid": 19
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 61,
+        "aftVac": 51,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 34,
+        "aftVac": 24,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "PETER TAN",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 4,
+        "minBid": 4,
+        "medBid": 6
+      }
+    ]
+  },
+  "COR-MGMT1302": {
+    "instructors": [
+      "BENJAMIN LIM"
+    ],
+    "records": [
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 61,
+        "aftVac": 50,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 34,
+        "aftVac": 24,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 4,
+        "medBid": 22
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 40,
+        "aftVac": 34,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 37,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 33,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 39,
+        "aftVac": 14,
+        "minBid": 4,
+        "medBid": 8
+      },
+      {
+        "instructor": "BENJAMIN LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 11
+      }
+    ]
+  },
+  "COR-MGMT1303": {
+    "instructors": [
+      "ALAN GOH"
+    ],
+    "records": [
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 56,
+        "aftVac": 46,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 21,
+        "minBid": 2,
+        "medBid": 12
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 2,
+        "minBid": 13,
+        "medBid": 18
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 52,
+        "aftVac": 40,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 35,
+        "aftVac": 22,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 5,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 60,
+        "aftVac": 49,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 23,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 4,
+        "medBid": 21
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 20,
+        "minBid": 5,
+        "medBid": 12
+      },
+      {
+        "instructor": "ALAN GOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 4,
+        "minBid": 4,
+        "medBid": 9
+      }
+    ]
+  },
+  "COR-COMM1304": {
+    "instructors": [
+      "CAROL NG"
+    ],
+    "records": [
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 60,
+        "aftVac": 50,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 23,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 4,
+        "medBid": 21
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 65,
+        "aftVac": 33,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 64,
+        "aftVac": 33,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 26,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 43,
+        "aftVac": 36,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 39,
+        "aftVac": 14,
+        "minBid": 4,
+        "medBid": 7
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 11
+      }
+    ]
+  },
+  "COR-OBHR1309": {
+    "instructors": [
+      "SARAH WONG"
+    ],
+    "records": [
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 53,
+        "aftVac": 44,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 19,
+        "minBid": 1,
+        "medBid": 11
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 17
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 57,
+        "aftVac": 47,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 32,
+        "aftVac": 22,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 14,
+        "medBid": 19
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 56,
+        "aftVac": 47,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 21,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 13,
+        "medBid": 19
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 51,
+        "aftVac": 39,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 35,
+        "aftVac": 22,
+        "minBid": 6,
+        "medBid": 8
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 5,
+        "minBid": 5,
+        "medBid": 11
+      }
+    ]
+  },
+  "COR-OBHR1310": {
+    "instructors": [
+      "SARAH WONG"
+    ],
+    "records": [
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 58,
+        "aftVac": 48,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 32,
+        "aftVac": 22,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 3,
+        "medBid": 20
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 63,
+        "aftVac": 52,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 35,
+        "aftVac": 25,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 5,
+        "medBid": 7
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 1,
+        "befVac": 57,
+        "aftVac": 44,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 2,
+        "befVac": 38,
+        "aftVac": 25,
+        "minBid": 2,
+        "medBid": 6
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2024/25 Term 3A",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 1,
+        "minBid": 7,
+        "medBid": 14
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 1,
+        "befVac": 58,
+        "aftVac": 45,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 2,
+        "befVac": 39,
+        "aftVac": 26,
+        "minBid": 2,
+        "medBid": 6
+      },
+      {
+        "instructor": "SARAH WONG",
+        "term": "2023/24 Term 3A",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 1,
+        "minBid": 8,
+        "medBid": 15
+      }
+    ]
+  },
+  "COR-OBHR130": {
+    "instructors": [
+      "CAROL NG"
+    ],
+    "records": [
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 62,
+        "aftVac": 52,
+        "minBid": 2,
+        "medBid": 2
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 35,
+        "aftVac": 25,
+        "minBid": 3,
+        "medBid": 5
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 5,
+        "medBid": 7
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 46,
+        "aftVac": 35,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 19,
+        "minBid": 5,
+        "medBid": 11
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 13,
+        "medBid": 17
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 41,
+        "aftVac": 35,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 37,
+        "aftVac": 27,
+        "minBid": 4,
+        "medBid": 7
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 5,
+        "minBid": 7,
+        "medBid": 9
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 42,
+        "aftVac": 37,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 17,
+        "minBid": 4,
+        "medBid": 9
+      },
+      {
+        "instructor": "CAROL NG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 3,
+        "minBid": 12,
+        "medBid": 21
+      }
+    ]
+  },
+  "COR-PPPM1311": {
+    "instructors": [
+      "WINSTON KOH"
+    ],
+    "records": [
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 37,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 39,
+        "aftVac": 14,
+        "minBid": 4,
+        "medBid": 8
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 15,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 11
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 40,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 17,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 14
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 40,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 17,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 6,
+        "minBid": 10,
+        "medBid": 13
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 52,
+        "aftVac": 43,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 19,
+        "minBid": 6,
+        "medBid": 11
+      },
+      {
+        "instructor": "WINSTON KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 16
+      }
+    ]
+  },
+  "COR-LAW2215": {
+    "instructors": [
+      "JAMES KOH"
+    ],
+    "records": [
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 54,
+        "aftVac": 41,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 23,
+        "minBid": 1,
+        "medBid": 5
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 18,
+        "aftVac": 5,
+        "minBid": 6,
+        "medBid": 12
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 56,
+        "aftVac": 47,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 21,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 10,
+        "aftVac": 3,
+        "minBid": 13,
+        "medBid": 19
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 50,
+        "aftVac": 38,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 34,
+        "aftVac": 21,
+        "minBid": 5,
+        "medBid": 7
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 5,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 60,
+        "aftVac": 50,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 33,
+        "aftVac": 23,
+        "minBid": 2,
+        "medBid": 4
+      },
+      {
+        "instructor": "JAMES KOH",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 4,
+        "medBid": 21
+      }
+    ]
+  },
+  "COR-MGMT2211": {
+    "instructors": [
+      "RICHARD LIM"
+    ],
+    "records": [
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 48,
+        "aftVac": 40,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 17,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 14
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 53,
+        "aftVac": 44,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 29,
+        "aftVac": 20,
+        "minBid": 1,
+        "medBid": 11
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 17
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 52,
+        "aftVac": 43,
+        "minBid": 1,
+        "medBid": 1
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 28,
+        "aftVac": 19,
+        "minBid": 6,
+        "medBid": 11
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 9,
+        "aftVac": 2,
+        "minBid": 12,
+        "medBid": 16
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 57,
+        "aftVac": 47,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 31,
+        "aftVac": 22,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "RICHARD LIM",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 3,
+        "minBid": 14,
+        "medBid": 19
+      }
+    ]
+  },
+  "COR-LAW2610": {
+    "instructors": [
+      "GRACE ONG"
+    ],
+    "records": [
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 63,
+        "aftVac": 32,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 36,
+        "aftVac": 25,
+        "minBid": 3,
+        "medBid": 6
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 13,
+        "aftVac": 4,
+        "minBid": 5,
+        "medBid": 7
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 44,
+        "aftVac": 34,
+        "minBid": 1,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 30,
+        "aftVac": 18,
+        "minBid": 4,
+        "medBid": 10
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 14,
+        "aftVac": 4,
+        "minBid": 13,
+        "medBid": 17
+      }
+    ]
+  },
+  "COR-MLAY2405": {
+    "instructors": [
+      "GRACE ONG"
+    ],
+    "records": [
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 65,
+        "aftVac": 50,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 27,
+        "aftVac": 16,
+        "minBid": 3,
+        "medBid": 9
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 12,
+        "aftVac": 3,
+        "minBid": 11,
+        "medBid": 19
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 1,
+        "befVac": 45,
+        "aftVac": 38,
+        "minBid": 2,
+        "medBid": 3
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 2,
+        "befVac": 40,
+        "aftVac": 15,
+        "minBid": 4,
+        "medBid": 8
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 1",
+        "section": "G1",
+        "window": 3,
+        "befVac": 16,
+        "aftVac": 5,
+        "minBid": 8,
+        "medBid": 12
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 61,
+        "aftVac": 47,
+        "minBid": 1,
+        "medBid": 2
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 25,
+        "aftVac": 20,
+        "minBid": 3,
+        "medBid": 7
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2024/25 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 11,
+        "aftVac": 2,
+        "minBid": 9,
+        "medBid": 17
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 1,
+        "befVac": 49,
+        "aftVac": 41,
+        "minBid": 1,
+        "medBid": 4
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 2,
+        "befVac": 26,
+        "aftVac": 17,
+        "minBid": 5,
+        "medBid": 9
+      },
+      {
+        "instructor": "GRACE ONG",
+        "term": "2023/24 Term 2",
+        "section": "G1",
+        "window": 3,
+        "befVac": 17,
+        "aftVac": 1,
+        "minBid": 10,
+        "medBid": 14
+      }
     ]
   }
 }

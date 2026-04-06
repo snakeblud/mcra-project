@@ -15,6 +15,7 @@ export type BidEntry = {
 export type BidPlannerState = {
   entries: Record<ModuleCode, BidEntry>;
   budgets: Record<string, number>;
+  totalECredits: number;
 };
 
 export type BidPlannerActions = {
@@ -27,6 +28,7 @@ export type BidPlannerActions = {
   removeEntry: (moduleCode: ModuleCode) => void;
   setPlannedBid: (moduleCode: ModuleCode, bid: number | null) => void;
   setBudget: (year: Year, term: Term, budget: number) => void;
+  setTotalECredits: (total: number) => void;
 };
 
 export type BidPlannerStore = BidPlannerState & BidPlannerActions;
@@ -37,6 +39,8 @@ export const createBidPlannerStore = () =>
       (set) => ({
         entries: {},
         budgets: {},
+        totalECredits: 0,
+        setTotalECredits: (total) => set({ totalECredits: total }),
         addEntry: (moduleCode, year, term, module) =>
           set((state) => {
             if (state.entries[moduleCode]) return state;

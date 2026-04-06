@@ -9,6 +9,7 @@ import {
   Sparkles,
   Target,
   Trash2,
+  Wallet,
   X,
 } from "lucide-react";
 
@@ -660,6 +661,8 @@ function TermSection({
 export default function BidPlannerPage() {
   const entries = useBidPlannerStore((s) => s.entries);
   const addEntry = useBidPlannerStore((s) => s.addEntry);
+  const totalECredits = useBidPlannerStore((s) => s.totalECredits);
+  const setTotalECredits = useBidPlannerStore((s) => s.setTotalECredits);
 
   const [pendingModule, setPendingModule] = useState<Module | null>(null);
 
@@ -682,29 +685,86 @@ export default function BidPlannerPage() {
     [pendingModule, addEntry],
   );
 
-  const totalModules = Object.keys(entries).length;
-  const totalBid = Object.values(entries).reduce(
+  const totalPlanned = Object.values(entries).reduce(
     (sum, e) => sum + (e.plannedBid ?? 0),
     0,
   );
+  const remaining = totalECredits - totalPlanned;
+  const isOver = totalECredits > 0 && remaining < 0;
+  const pct = totalECredits > 0
+    ? Math.min(100, Math.round((totalPlanned / totalECredits) * 100))
+    : 0;
 
   const takenModules = Object.keys(entries) as ModuleCode[];
 
   return (
     <div style={{ padding: PADDING }} className="space-y-6">
       {/* Header */}
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold">Bid Planner</h1>
-          <p className="text-muted-foreground mt-1 text-sm">
-            Plan your module bids, set eCredit budgets, and get AI-powered bid
-            price recommendations.
-          </p>
+      <div>
+        <h1 className="text-2xl font-bold">Bid Planner</h1>
+        <p className="text-muted-foreground mt-1 text-sm">
+          Plan your module bids, set eCredit budgets, and get AI-powered bid
+          price recommendations.
+        </p>
+      </div>
+
+      {/* eCredits Wallet */}
+      <div className="border-border bg-card rounded-xl border p-4 space-y-3 shadow-sm">
+        <div className="flex items-center gap-2">
+          <Wallet className="text-primary h-4 w-4" />
+          <span className="text-sm font-semibold">My eCredits</span>
         </div>
-        {totalModules > 0 && (
-          <div className="bg-muted shrink-0 rounded-lg px-4 py-2 text-center">
-            <p className="text-foreground text-xl font-bold">{totalBid}</p>
-            <p className="text-muted-foreground text-xs">eC planned</p>
+        <div className="flex flex-wrap items-end gap-4">
+          <div className="space-y-1">
+            <Label className="text-xs text-muted-foreground">Current balance</Label>
+            <div className="flex items-center gap-2">
+              <Input
+                type="number"
+                min={0}
+                placeholder="e.g. 600"
+                value={totalECredits || ""}
+                onChange={(e) => setTotalECredits(Number(e.target.value))}
+                className="w-36 h-9 text-base font-semibold"
+              />
+              <span className="text-muted-foreground text-sm">eCredits</span>
+            </div>
+          </div>
+
+          <div className="flex gap-4 flex-wrap">
+            <div className="text-center">
+              <p className="text-muted-foreground text-xs">Planned</p>
+              <p className="text-foreground text-lg font-bold">{totalPlanned}</p>
+            </div>
+            {totalECredits > 0 && (
+              <>
+                <div className="text-center">
+                  <p className="text-muted-foreground text-xs">Remaining</p>
+                  <p className={`text-lg font-bold ${isOver ? "text-destructive" : "text-green-600 dark:text-green-400"}`}>
+                    {isOver ? `−${Math.abs(remaining)}` : remaining}
+                  </p>
+                </div>
+                <div className="text-center">
+                  <p className="text-muted-foreground text-xs">Used</p>
+                  <p className="text-foreground text-lg font-bold">{pct}%</p>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+
+        {totalECredits > 0 && (
+          <div className="space-y-1">
+            <div className="bg-muted h-2 w-full rounded-full overflow-hidden">
+              <div
+                className={`h-full rounded-full transition-all ${isOver ? "bg-destructive" : "bg-primary"}`}
+                style={{ width: `${pct}%` }}
+              />
+            </div>
+            {isOver && (
+              <p className="text-destructive text-xs font-medium">
+                ⚠ You&apos;ve planned {Math.abs(remaining)} more eCredits than your balance. Consider reducing some bids.
+              </p>
+            )}
           </div>
         )}
       </div>

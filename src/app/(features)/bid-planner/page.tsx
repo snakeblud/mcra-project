@@ -50,40 +50,59 @@ import type { Module, ModuleCode, ModuleForPlanner } from "@/types/primitives/mo
 
 // ─── Helper: compute recommended bid ────────────────────────────────────────
 
+type BidResult = {
+  bid: number;
+  basis: "historical" | "budget-estimate";
+};
+
 function computeRecommendedBid(
   chartData: ChartData[],
   strategy: "aggressive" | "average" | "conservative",
   minBudget: number,
   maxBudget: number,
-): number {
+): BidResult {
   const medBids = chartData.map((d) => d.medBid).filter((b) => b > 0);
   const minBids = chartData.map((d) => d.minBid).filter((b) => b > 0);
 
-  const allBids = medBids.length > 0 ? medBids : minBids;
-  if (allBids.length === 0)
-    return Math.round((minBudget + maxBudget) / 2);
+  // No historical data — estimate purely from budget range, differentiated by strategy
+  if (medBids.length === 0 && minBids.length === 0) {
+    const range = maxBudget - minBudget;
+    const bid =
+      strategy === "aggressive"
+        ? maxBudget
+        : strategy === "average"
+          ? Math.round(minBudget + range * 0.6)
+          : Math.round(minBudget + range * 0.25);
+    return { bid, basis: "budget-estimate" };
+  }
 
-  const maxVal = Math.max(...allBids);
-  const avgVal = Math.round(allBids.reduce((a, b) => a + b, 0) / allBids.length);
-  const minVal = Math.min(...allBids);
+  // Use medBids as primary; fall back to minBids if no medians
+  const primary = medBids.length > 0 ? medBids : minBids;
+  const histMax = Math.max(...primary);
+  const histAvg = Math.round(primary.reduce((a, b) => a + b, 0) / primary.length);
+  // For conservative: use actual minimum bids (not median minimums)
+  const histMin =
+    minBids.length > 0 ? Math.min(...minBids) : Math.min(...primary);
 
   let base: number;
   switch (strategy) {
     case "aggressive":
-      // Significantly above historical max — almost guarantees a slot
-      base = Math.round(maxVal * 1.5);
+      // 50% above historical max — near-guaranteed slot
+      base = Math.round(histMax * 1.5);
       break;
     case "average":
-      // Comfortably above median — strong chance without blowing budget
-      base = Math.round(avgVal * 1.25);
+      // 25% above historical median average — strong odds
+      base = Math.round(histAvg * 1.25);
       break;
     case "conservative":
-      // Just above historical minimum — saves eCredits, still in the game
-      base = Math.round(minVal * 1.1 + 5);
+      // 10% above lowest recorded minimum bid + 5 buffer
+      base = Math.round(histMin * 1.1 + 5);
       break;
   }
 
-  return Math.min(maxBudget, Math.max(minBudget, base));
+  // Soft-clamp: warn if outside budget but don't silently collapse different strategies to same value
+  const clamped = Math.max(minBudget, base);
+  return { bid: clamped, basis: "historical" };
 }
 
 // ─── Helper: compute stats ───────────────────────────────────────────────────
@@ -136,6 +155,7 @@ function AnalyticsModal({
   const [maxBudget, setMaxBudget] = useState(1000);
   const [showRecommendation, setShowRecommendation] = useState(false);
   const [recommendedBid, setRecommendedBid] = useState<number | null>(null);
+  const [bidBasis, setBidBasis] = useState<"historical" | "budget-estimate">("historical");
 
   const { data: instructors, isLoading } = api.bidAnalytics.getInstructors.useQuery(
     { moduleCode },
@@ -186,13 +206,14 @@ function AnalyticsModal({
   const stats = computeStats(chartData ?? []);
 
   const handleAnalyse = () => {
-    const bid = computeRecommendedBid(
+    const result = computeRecommendedBid(
       chartData ?? [],
       strategy,
       minBudget,
       maxBudget,
     );
-    setRecommendedBid(bid);
+    setRecommendedBid(result.bid);
+    setBidBasis(result.basis);
     setShowRecommendation(true);
   };
 
@@ -390,29 +411,41 @@ function AnalyticsModal({
               </div>
 
               {showRecommendation && recommendedBid !== null && (
-                <div className="border-violet-500/40 bg-violet-500/10 flex items-center justify-between rounded-lg border p-4">
-                  <div>
-                    <p className="text-muted-foreground text-xs uppercase tracking-wide">
-                      Recommended bid ({strategy})
-                    </p>
-                    <p className="text-foreground text-3xl font-bold">
-                      {recommendedBid}{" "}
-                      <span className="text-muted-foreground text-base font-normal">
-                        eCredits
-                      </span>
-                    </p>
+                <div className="space-y-2">
+                  <div className="border-violet-500/40 bg-violet-500/10 flex items-center justify-between rounded-lg border p-4">
+                    <div>
+                      <p className="text-muted-foreground text-xs uppercase tracking-wide">
+                        Recommended bid ({strategy})
+                      </p>
+                      <p className="text-foreground text-3xl font-bold">
+                        {recommendedBid}{" "}
+                        <span className="text-muted-foreground text-base font-normal">
+                          eCredits
+                        </span>
+                      </p>
+                      {bidBasis === "budget-estimate" && (
+                        <p className="text-amber-600 dark:text-amber-400 text-xs mt-1">
+                          ⚠ No bid history available — estimated from your budget range
+                        </p>
+                      )}
+                      {bidBasis === "historical" && recommendedBid > maxBudget && (
+                        <p className="text-amber-600 dark:text-amber-400 text-xs mt-1">
+                          ⚠ Above your max budget — consider raising your limit or switching strategy
+                        </p>
+                      )}
+                    </div>
+                    <Button
+                      onClick={() => {
+                        onBidSelected(recommendedBid);
+                        onClose();
+                      }}
+                      size="sm"
+                      className="gap-1.5"
+                    >
+                      <Target className="h-3.5 w-3.5" />
+                      Use this bid
+                    </Button>
                   </div>
-                  <Button
-                    onClick={() => {
-                      onBidSelected(recommendedBid);
-                      onClose();
-                    }}
-                    size="sm"
-                    className="gap-1.5"
-                  >
-                    <Target className="h-3.5 w-3.5" />
-                    Use this bid
-                  </Button>
                 </div>
               )}
             </div>

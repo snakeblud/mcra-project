@@ -123,7 +123,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <a
-                href="https://github.com/codie-codes/smu-mods"
+                href="https://github.com/snakeblud/mcra-project"
                 target="_blank"
                 rel="noopener noreferrer"
               >

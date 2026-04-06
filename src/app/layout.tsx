@@ -20,8 +20,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SMU MODs",
-  description: "Plan your SMU modules with ease",
+  title: "BidBuddy",
+  description: "Stop guessing how much to bid. BidBuddy gives SMU students AI-powered bid strategy, historical analytics, and eCredit budget tracking.",
   icons: [{ rel: "icon", url: "/favicon.png" }],
 };
 

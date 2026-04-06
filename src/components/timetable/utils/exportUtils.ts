@@ -31,13 +31,13 @@ export const exportAsPdfOrImage = async (
       });
       pdf.addImage(imgData, "PNG", 0, 0, canvas.width, canvas.height);
       pdf.save(
-        `smumods_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.pdf`,
+        `bidbuddy_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.pdf`,
       );
     } else {
       const image = await toPng(element, { quality: 1 });
       download(
         image,
-        `smumods_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.png`,
+        `bidbuddy_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.png`,
       );
     }
     return;
@@ -75,7 +75,7 @@ export const exportAsPdfOrImage = async (
       });
       pdf.addImage(imgData, "PNG", 0, 0, canvas.width, canvas.height);
       pdf.save(
-        `smumods_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.pdf`,
+        `bidbuddy_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.pdf`,
       );
     } else {
       const image = await toPng(element, {
@@ -83,7 +83,7 @@ export const exportAsPdfOrImage = async (
       });
       download(
         image,
-        `smumods_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.png`,
+        `bidbuddy_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.png`,
       );
     }
   } finally {
@@ -116,7 +116,7 @@ export const exportClassesICal = (
   });
   download(
     URL.createObjectURL(blob),
-    `smumods_classes_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.ics`,
+    `bidbuddy_classes_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.ics`,
   );
 };
 
@@ -137,7 +137,7 @@ export const exportExamsICal = (timetable: Timetable) => {
   });
   download(
     URL.createObjectURL(examsBlob),
-    `smumods_exams_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.ics`,
+    `bidbuddy_exams_${APP_CONFIG.academicYear}_${APP_CONFIG.currentTerm}.ics`,
   );
 };
 

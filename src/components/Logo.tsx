@@ -1,25 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Target } from "lucide-react";
 
 export function Logo() {
   return (
-    <Link className="relative h-10 w-32" href={"/"}>
-      <Image
-        src="/logo_light.png"
-        fill
-        alt="Logo"
-        className="block object-contain dark:hidden"
-        sizes="100%"
-        priority
-      />
-      <Image
-        src="/logo_dark.png"
-        fill
-        alt="Logo"
-        className="hidden object-contain dark:block"
-        sizes="100%"
-        priority
-      />
+    <Link href="/" className="flex items-center gap-2">
+      <div className="bg-primary flex h-7 w-7 items-center justify-center rounded-md">
+        <Target className="h-4 w-4 text-white" />
+      </div>
+      <span className="text-foreground text-lg font-bold tracking-tight">
+        BidBuddy
+      </span>
     </Link>
   );
 }

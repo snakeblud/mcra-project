@@ -20,7 +20,7 @@ const TutorialContext = createContext<TutorialContextValue | undefined>(
   undefined,
 );
 
-const TUTORIAL_STORAGE_KEY = "smu-mods-tutorial-completed";
+const TUTORIAL_STORAGE_KEY = "bidbuddy-tutorial-completed";
 
 export function TutorialProvider({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<TutorialState>({

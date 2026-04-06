@@ -1,7 +1,5 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
 import {
   AlertCircle,
   ArrowRight,
@@ -22,23 +20,28 @@ import {
   X,
   Zap,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useCallback, useRef, useState } from "react";
 
-import { generateRecommendations } from "@/lib/recommender-engine";
-import type {
-  LearningPreference,
-  RecommendationResult,
-  RecommendedModule,
-} from "@/lib/recommender-engine";
-import { useModuleBankStore } from "@/stores/moduleBank/provider";
-import { useMultiplePlannerStore } from "@/stores/multiplePlanners/provider";
-import type { Term, Year } from "@/types/planner";
-import type { ModuleCode } from "@/types/primitives/module";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import type {
+  LearningPreference,
+  RecommendationResult,
+  RecommendedModule,
+} from "@/lib/recommender-engine";
+import {
+  extractTakenModulesFromTranscriptText,
+  generateRecommendations,
+} from "@/lib/recommender-engine";
+import { useModuleBankStore } from "@/stores/moduleBank/provider";
+import { useMultiplePlannerStore } from "@/stores/multiplePlanners/provider";
+import type { Term, Year } from "@/types/planner";
+import type { ModuleCode } from "@/types/primitives/module";
 
 // ─── Processing steps ────────────────────────────────────────────────────────
 
@@ -104,6 +107,31 @@ function groupByYear(modules: RecommendedModule[]) {
   return groups;
 }
 
+async function extractTextFromPdf(file: File): Promise<string> {
+  const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.mjs");
+  const { getDocument, GlobalWorkerOptions } = pdfjsLib;
+
+  GlobalWorkerOptions.workerSrc = new URL(
+    "pdfjs-dist/legacy/build/pdf.worker.min.mjs",
+    import.meta.url,
+  ).toString();
+
+  const data = new Uint8Array(await file.arrayBuffer());
+  const document = await getDocument({ data }).promise;
+  const chunks: string[] = [];
+
+  for (let pageNumber = 1; pageNumber <= document.numPages; pageNumber++) {
+    const page = await document.getPage(pageNumber);
+    const textContent = await page.getTextContent();
+    const pageText = textContent.items
+      .map((item) => ("str" in item ? item.str : ""))
+      .join(" ");
+    chunks.push(pageText);
+  }
+
+  return chunks.join("\n");
+}
+
 // ─── Main page ────────────────────────────────────────────────────────────────
 
 type Step = "form" | "processing" | "results";
@@ -131,6 +159,7 @@ export default function RecommenderPage() {
   // ── Result state
   const [result, setResult] = useState<RecommendationResult | null>(null);
   const [isCreatingPlan, setIsCreatingPlan] = useState(false);
+  const [isParsingTranscript, setIsParsingTranscript] = useState(false);
 
   // ── File drop/select
   const handleFileDrop = useCallback((e: React.DragEvent) => {
@@ -162,6 +191,9 @@ export default function RecommenderPage() {
       return;
     }
 
+    const transcriptFile = file;
+    if (!transcriptFile) return;
+
     setErrors({});
     setStep("processing");
     setProcessStep(0);
@@ -183,9 +215,33 @@ export default function RecommenderPage() {
         ? modules
         : await fetch("/data/modules.json").then((r) => r.json());
 
+    let transcriptModulesTaken: ModuleCode[] = [];
+    try {
+      setIsParsingTranscript(true);
+      const transcriptText = await extractTextFromPdf(transcriptFile);
+      transcriptModulesTaken = extractTakenModulesFromTranscriptText(
+        transcriptText,
+        latestModules,
+      );
+    } catch (error) {
+      console.error("Failed to parse transcript PDF", error);
+      setErrors((prev) => ({
+        ...prev,
+        file: "We couldn't read your transcript. Please upload another PDF.",
+      }));
+    } finally {
+      setIsParsingTranscript(false);
+    }
+
     // Generate the result
     const rec = generateRecommendations(
-      { jobRole, interests, preference, hasTranscript: true },
+      {
+        jobRole,
+        interests,
+        preference,
+        hasTranscript: true,
+        transcriptModulesTaken,
+      },
       latestModules,
     );
 
@@ -430,8 +486,14 @@ export default function RecommenderPage() {
         </Card>
 
         <Button onClick={handleSubmit} className="w-full" size="lg">
-          <Brain className="mr-2 h-4 w-4" />
-          Analyse &amp; Recommend Modules
+          {isParsingTranscript ? (
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            <Brain className="mr-2 h-4 w-4" />
+          )}
+          {isParsingTranscript
+            ? "Parsing transcript..."
+            : "Analyse & Recommend Modules"}
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
@@ -602,6 +664,30 @@ export default function RecommenderPage() {
           </CardContent>
         </Card>
       </div>
+
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle className="text-base flex items-center gap-2">
+            <FileText className="h-4 w-4" />
+            Extracted From Transcript
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          {result.transcriptModulesTaken.length > 0 ? (
+            <div className="flex flex-wrap gap-1.5">
+              {result.transcriptModulesTaken.map((code) => (
+                <Badge key={code} variant="outline" className="text-xs">
+                  {code}
+                </Badge>
+              ))}
+            </div>
+          ) : (
+            <p className="text-xs text-muted-foreground">
+              No modules were detected from the transcript text.
+            </p>
+          )}
+        </CardContent>
+      </Card>
 
       {/* ── Module recommendations — Tabs */}
       <Tabs defaultValue="timeline">

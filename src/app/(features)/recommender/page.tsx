@@ -108,13 +108,11 @@ function groupByYear(modules: RecommendedModule[]) {
 }
 
 async function extractTextFromPdf(file: File): Promise<string> {
-  const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.mjs");
+  const pdfjsLib = await import("pdfjs-dist");
   const { getDocument, GlobalWorkerOptions } = pdfjsLib;
 
-  GlobalWorkerOptions.workerSrc = new URL(
-    "pdfjs-dist/legacy/build/pdf.worker.min.mjs",
-    import.meta.url,
-  ).toString();
+  // Worker served from public/ — avoids Turbopack .mjs resolution issues
+  GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
 
   const data = new Uint8Array(await file.arrayBuffer());
   const document = await getDocument({ data }).promise;

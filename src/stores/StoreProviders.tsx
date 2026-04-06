@@ -1,3 +1,4 @@
+import { BidPlannerStoreProvider } from "./bidPlanner/provider";
 import { ConfigStoreProvider } from "./config/provider";
 import { EventStoreProvider } from "./event/provider";
 import { ModuleBankStoreProvider } from "./moduleBank/provider";
@@ -14,7 +15,9 @@ export default function StoreProviders({
       <MultiplePlannerStoreProvider>
         <ModuleBankStoreProvider>
           <TimetableStoreProvider>
-            <EventStoreProvider>{children}</EventStoreProvider>
+            <EventStoreProvider>
+              <BidPlannerStoreProvider>{children}</BidPlannerStoreProvider>
+            </EventStoreProvider>
           </TimetableStoreProvider>
         </ModuleBankStoreProvider>
       </MultiplePlannerStoreProvider>

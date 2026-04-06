@@ -14,6 +14,7 @@ import {
   NotebookPen,
   Settings,
   Sun,
+  Target,
 } from "lucide-react";
 import { useTheme } from "next-themes";
 
@@ -50,6 +51,12 @@ const data = {
       title: "Bid Price Analytics",
       url: "/bid-analytics",
       icon: ChartArea,
+      isCollapsible: false,
+    },
+    {
+      title: "Bid Planner",
+      url: "/bid-planner",
+      icon: Target,
       isCollapsible: false,
     },
     {

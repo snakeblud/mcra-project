@@ -70,13 +70,16 @@ function computeRecommendedBid(
   let base: number;
   switch (strategy) {
     case "aggressive":
-      base = Math.round(maxVal * 1.1);
+      // Significantly above historical max — almost guarantees a slot
+      base = Math.round(maxVal * 1.5);
       break;
     case "average":
-      base = Math.round(avgVal * 1.05);
+      // Comfortably above median — strong chance without blowing budget
+      base = Math.round(avgVal * 1.25);
       break;
     case "conservative":
-      base = Math.round(minVal * 0.95 + 1);
+      // Just above historical minimum — saves eCredits, still in the game
+      base = Math.round(minVal * 1.1 + 5);
       break;
   }
 
@@ -129,7 +132,7 @@ function AnalyticsModal({
   const [selectedSectionIdx, setSelectedSectionIdx] = useState(0);
 
   const [strategy, setStrategy] = useState<"aggressive" | "average" | "conservative">("average");
-  const [minBudget, setMinBudget] = useState(0);
+  const [minBudget, setMinBudget] = useState(10);
   const [maxBudget, setMaxBudget] = useState(1000);
   const [showRecommendation, setShowRecommendation] = useState(false);
   const [recommendedBid, setRecommendedBid] = useState<number | null>(null);
@@ -194,9 +197,9 @@ function AnalyticsModal({
   };
 
   const strategyLabels = {
-    aggressive: { label: "Aggressive", desc: "Bid above the historical median — maximises chance of getting the slot." },
-    average: { label: "Average", desc: "Bid near the historical median — balanced cost vs. success rate." },
-    conservative: { label: "Conservative", desc: "Bid just above the historical minimum — save eCredits but higher risk." },
+    aggressive: { label: "Aggressive 🔥", desc: "50% above historical max — near-guaranteed slot, spend freely." },
+    average: { label: "Average ⚖️", desc: "25% above historical median — strong odds, reasonable spend." },
+    conservative: { label: "Conservative 💰", desc: "10% above historical minimum — saves eCredits, some risk of missing out." },
   };
 
   return (
@@ -351,21 +354,27 @@ function AnalyticsModal({
                 <div className="flex-1 space-y-1">
                   <Label className="text-xs">Min budget (eCredits)</Label>
                   <Input
-                    type="number"
-                    min={0}
+                    inputMode="numeric"
+                    pattern="[0-9]*"
                     value={minBudget}
-                    onChange={(e) => setMinBudget(Number(e.target.value))}
-                    className="h-8 text-sm"
+                    onChange={(e) => {
+                      const v = e.target.value.replace(/[^0-9]/g, "");
+                      setMinBudget(v === "" ? 0 : parseInt(v, 10));
+                    }}
+                    className="h-8 text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                   />
                 </div>
                 <div className="flex-1 space-y-1">
                   <Label className="text-xs">Max budget (eCredits)</Label>
                   <Input
-                    type="number"
-                    min={0}
+                    inputMode="numeric"
+                    pattern="[0-9]*"
                     value={maxBudget}
-                    onChange={(e) => setMaxBudget(Number(e.target.value))}
-                    className="h-8 text-sm"
+                    onChange={(e) => {
+                      const v = e.target.value.replace(/[^0-9]/g, "");
+                      setMaxBudget(v === "" ? 0 : parseInt(v, 10));
+                    }}
+                    className="h-8 text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                   />
                 </div>
                 <div className="flex items-end">

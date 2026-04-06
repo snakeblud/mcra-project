@@ -134,7 +134,7 @@ export const api = {
               ...new Set(
                 records
                   .filter(
-                    (r) => r.instructor === input.instructor && r.minBid > 0,
+                    (r) => r.instructor === input.instructor,
                   )
                   .map((r) => r.term),
               ),
@@ -168,8 +168,7 @@ export const api = {
                   .filter(
                     (r) =>
                       r.instructor === input.instructor &&
-                      r.term === input.term &&
-                      r.minBid > 0,
+                      r.term === input.term,
                   )
                   .map((r) => r.section),
               ),
@@ -206,8 +205,7 @@ export const api = {
                 (r) =>
                   r.instructor === input.instructor &&
                   r.term === input.term &&
-                  r.section === input.section &&
-                  r.minBid > 0,
+                  r.section === input.section,
               )
               .map((r) => ({
                 window: String(r.window),

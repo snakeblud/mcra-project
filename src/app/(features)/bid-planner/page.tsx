@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import {
   BarChart2,
   Bot,
+  BrainCircuit,
   Loader2,
   Plus,
   Sparkles,
@@ -12,6 +13,7 @@ import {
   Wallet,
   X,
 } from "lucide-react";
+import Link from "next/link";
 
 import { BidAnalyticChart, type ChartData } from "@/components/BidAnalytics/Chart";
 import { SearchModule } from "@/components/SearchModule";
@@ -43,6 +45,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PADDING } from "@/config";
 import { useBidPlannerStore } from "@/stores/bidPlanner/provider";
+import { useRecommendationStore } from "@/stores/recommendation/provider";
 import { api } from "@/trpc/react";
 import { years, terms } from "@/types/planner";
 import type { Term, Year } from "@/types/planner";
@@ -705,6 +708,7 @@ export default function BidPlannerPage() {
   const addEntry = useBidPlannerStore((s) => s.addEntry);
   const totalECredits = useBidPlannerStore((s) => s.totalECredits);
   const setTotalECredits = useBidPlannerStore((s) => s.setTotalECredits);
+  const savedRec = useRecommendationStore((s) => s.saved);
 
   const [pendingModule, setPendingModule] = useState<Module | null>(null);
 
@@ -749,6 +753,36 @@ export default function BidPlannerPage() {
           price recommendations.
         </p>
       </div>
+
+      {/* AI Recommendation session banner */}
+      {savedRec && (
+        <Link
+          href="/recommender"
+          className="flex items-center justify-between gap-3 rounded-xl border border-primary/25 bg-primary/5 px-4 py-3 hover:bg-primary/10 transition-colors"
+        >
+          <div className="flex items-center gap-3 min-w-0">
+            <BrainCircuit className="h-5 w-5 text-primary shrink-0" />
+            <div className="min-w-0">
+              <p className="text-sm font-semibold truncate">
+                AI Recommendation — {savedRec.result.jobRoleDetected}
+              </p>
+              <p className="text-xs text-muted-foreground">
+                {savedRec.result.recommendedModules.length} modules ·{" "}
+                {savedRec.preference === "depth" ? "Depth" : "Breadth"} path ·
+                saved{" "}
+                {new Date(savedRec.savedAt).toLocaleDateString("en-SG", {
+                  day: "numeric",
+                  month: "short",
+                  year: "numeric",
+                })}
+              </p>
+            </div>
+          </div>
+          <span className="text-xs text-primary font-medium shrink-0">
+            View →
+          </span>
+        </Link>
+      )}
 
       {/* eCredits Wallet */}
       <div className="border-border bg-card rounded-xl border p-4 space-y-3 shadow-sm">

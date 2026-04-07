@@ -3,6 +3,7 @@ import { ConfigStoreProvider } from "./config/provider";
 import { EventStoreProvider } from "./event/provider";
 import { ModuleBankStoreProvider } from "./moduleBank/provider";
 import { MultiplePlannerStoreProvider } from "./multiplePlanners/provider";
+import { RecommendationStoreProvider } from "./recommendation/provider";
 import { TimetableStoreProvider } from "./timetable/provider";
 
 export default function StoreProviders({
@@ -16,7 +17,11 @@ export default function StoreProviders({
         <ModuleBankStoreProvider>
           <TimetableStoreProvider>
             <EventStoreProvider>
-              <BidPlannerStoreProvider>{children}</BidPlannerStoreProvider>
+              <BidPlannerStoreProvider>
+                <RecommendationStoreProvider>
+                  {children}
+                </RecommendationStoreProvider>
+              </BidPlannerStoreProvider>
             </EventStoreProvider>
           </TimetableStoreProvider>
         </ModuleBankStoreProvider>

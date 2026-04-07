@@ -40,6 +40,7 @@ import {
 } from "@/lib/recommender-engine";
 import { useModuleBankStore } from "@/stores/moduleBank/provider";
 import { useBidPlannerStore } from "@/stores/bidPlanner/provider";
+import { useRecommendationStore } from "@/stores/recommendation/provider";
 import type { Term, Year } from "@/types/planner";
 import type { ModuleCode } from "@/types/primitives/module";
 
@@ -138,15 +139,18 @@ export default function RecommenderPage() {
   const router = useRouter();
   const { modules, refreshModuleBank } = useModuleBankStore((s) => s);
   const { addEntry } = useBidPlannerStore((s) => s);
+  const { saved, saveRecommendation, clearRecommendation } = useRecommendationStore((s) => s);
 
-  // ── Step state
-  const [step, setStep] = useState<Step>("form");
+  // ── Step state — restore from saved session if available
+  const [step, setStep] = useState<Step>(saved ? "results" : "form");
 
   // ── Form state
   const [file, setFile] = useState<File | null>(null);
   const [jobRole, setJobRole] = useState("");
   const [interests, setInterests] = useState("");
-  const [preference, setPreference] = useState<LearningPreference>("depth");
+  const [preference, setPreference] = useState<LearningPreference>(
+    saved?.preference ?? "depth",
+  );
   const [dragOver, setDragOver] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -154,8 +158,10 @@ export default function RecommenderPage() {
   // ── Processing state
   const [processStep, setProcessStep] = useState(0);
 
-  // ── Result state
-  const [result, setResult] = useState<RecommendationResult | null>(null);
+  // ── Result state — restore from saved session if available
+  const [result, setResult] = useState<RecommendationResult | null>(
+    saved?.result ?? null,
+  );
   const [isCreatingPlan, setIsCreatingPlan] = useState(false);
   const [isParsingTranscript, setIsParsingTranscript] = useState(false);
 
@@ -246,6 +252,7 @@ export default function RecommenderPage() {
     // Short pause for dramatic effect
     await new Promise((r) => setTimeout(r, 400));
     setResult(rec);
+    saveRecommendation(rec, preference);
     setStep("results");
   };
 
@@ -567,6 +574,25 @@ export default function RecommenderPage() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-6 pb-16">
+      {/* ── Restored session banner */}
+      {saved && (
+        <div className="flex items-center gap-2 rounded-lg border border-primary/20 bg-primary/5 px-4 py-2.5 text-sm">
+          <Sparkles className="h-4 w-4 text-primary shrink-0" />
+          <span className="text-muted-foreground">
+            Restored from your session on{" "}
+            <span className="font-medium text-foreground">
+              {new Date(saved.savedAt).toLocaleDateString("en-SG", {
+                day: "numeric",
+                month: "short",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
+            </span>
+          </span>
+        </div>
+      )}
+
       {/* ── Header */}
       <div className="flex items-start justify-between gap-4 flex-wrap">
         <div className="space-y-1">
@@ -577,7 +603,7 @@ export default function RecommenderPage() {
           <p className="text-sm text-muted-foreground">
             Personalised module plan for a{" "}
             <strong>{result.jobRoleDetected}</strong> career path ·{" "}
-            {preference === "depth" ? "Depth" : "Breadth"} preference ·{" "}
+            {(saved?.preference ?? preference) === "depth" ? "Depth" : "Breadth"} preference ·{" "}
             {result.recommendedModules.length} modules
           </p>
         </div>
@@ -585,9 +611,14 @@ export default function RecommenderPage() {
           variant="outline"
           size="sm"
           onClick={() => {
+            clearRecommendation();
             setStep("form");
             setResult(null);
             setProcessStep(0);
+            setJobRole("");
+            setInterests("");
+            setPreference("depth");
+            setFile(null);
           }}
         >
           Start Over

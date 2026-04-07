@@ -222,10 +222,30 @@ const MODULE_SCHEDULE: Record<string, { year: Year; term: Term }> = {
 
 type ScheduleSlot = { year: Year; term: Term };
 
+// Only Term 1 and Term 2 are bidding windows
+const BIDDING_TERMS: Term[] = ["Term 1", "Term 2"];
+
+// All possible bidding slots across 4 years, in chronological order
+const ALL_SLOTS: ScheduleSlot[] = (["1", "2", "3", "4"] as Year[]).flatMap(
+  (year) => BIDDING_TERMS.map((term) => ({ year, term })),
+);
+
 function compareSchedule(a: ScheduleSlot, b: ScheduleSlot): number {
   const yearDiff = parseInt(a.year, 10) - parseInt(b.year, 10);
   if (yearDiff !== 0) return yearDiff;
-  return terms.indexOf(a.term) - terms.indexOf(b.term);
+  return BIDDING_TERMS.indexOf(a.term as typeof BIDDING_TERMS[number]) -
+    BIDDING_TERMS.indexOf(b.term as typeof BIDDING_TERMS[number]);
+}
+
+function slotKey(s: ScheduleSlot): string {
+  return `${s.year}|${s.term}`;
+}
+
+function getNextSlot(slot: ScheduleSlot): ScheduleSlot {
+  const idx = ALL_SLOTS.findIndex(
+    (s) => s.year === slot.year && s.term === slot.term,
+  );
+  return ALL_SLOTS[Math.min(idx + 1, ALL_SLOTS.length - 1)]!;
 }
 
 function getLatestCompletedSlot(
@@ -240,6 +260,79 @@ function getLatestCompletedSlot(
   return takenSlots.reduce((latest, slot) =>
     compareSchedule(slot, latest) > 0 ? slot : latest,
   );
+}
+
+// ─── Optimised scheduler ──────────────────────────────────────────────────────
+// Assigns each module a year/term slot that:
+//   1. Is at or after the student's next available slot
+//   2. Respects the module's natural schedule ordering (core before elective)
+//   3. Caps at MAX_PER_SLOT modules per slot; overflows spill into the next slot
+
+const MAX_PER_SLOT = 4;
+
+function buildOptimizedSchedule(
+  modules: { code: string; priority: "essential" | "recommended" | "optional" }[],
+  latestCompletedSlot: ScheduleSlot | null,
+): Map<string, ScheduleSlot> {
+  const startSlot: ScheduleSlot = latestCompletedSlot
+    ? getNextSlot(latestCompletedSlot)
+    : { year: "1", term: "Term 1" };
+
+  const futureSlots = ALL_SLOTS.filter(
+    (s) => compareSchedule(s, startSlot) >= 0,
+  );
+
+  // Sort modules: essential first, then by natural schedule position
+  const sorted = [...modules].sort((a, b) => {
+    const priorityOrder = { essential: 0, recommended: 1, optional: 2 };
+    const pDiff = priorityOrder[a.priority] - priorityOrder[b.priority];
+    if (pDiff !== 0) return pDiff;
+    const aSlot = MODULE_SCHEDULE[a.code];
+    const bSlot = MODULE_SCHEDULE[b.code];
+    if (aSlot && bSlot) return compareSchedule(aSlot, bSlot);
+    return 0;
+  });
+
+  const usage = new Map<string, number>();
+  const result = new Map<string, ScheduleSlot>();
+
+  for (const mod of sorted) {
+    const natural = MODULE_SCHEDULE[mod.code];
+    let placed = false;
+
+    // Try the natural slot first if it's in the future and has room
+    if (natural && compareSchedule(natural, startSlot) >= 0) {
+      const key = slotKey(natural);
+      const count = usage.get(key) ?? 0;
+      if (count < MAX_PER_SLOT) {
+        result.set(mod.code, natural);
+        usage.set(key, count + 1);
+        placed = true;
+      }
+    }
+
+    // Otherwise find the earliest future slot with room
+    if (!placed) {
+      for (const slot of futureSlots) {
+        const key = slotKey(slot);
+        const count = usage.get(key) ?? 0;
+        if (count < MAX_PER_SLOT) {
+          result.set(mod.code, slot);
+          usage.set(key, count + 1);
+          placed = true;
+          break;
+        }
+      }
+    }
+
+    // Last resort: append to the final slot
+    if (!placed && futureSlots.length > 0) {
+      const last = futureSlots[futureSlots.length - 1]!;
+      result.set(mod.code, last);
+    }
+  }
+
+  return result;
 }
 
 // ─── Job role definitions ─────────────────────────────────────────────────────
@@ -509,28 +602,38 @@ export function generateRecommendations(
     return compareSchedule(schedule, latestCompletedSlot) > 0;
   });
 
-  // Build recommended module list, filtering to only what's in the module bank
-  const recommendedModules: RecommendedModule[] = futureCodes
-    .filter((code) => !!moduleBank[code as ModuleCode])
-    .map((code) => {
-      const schedule = MODULE_SCHEDULE[code] ?? { year: "2" as Year, term: "Term 1" as Term };
-      const skills = MODULE_SKILLS[code] ?? [];
-      const isCore = profile.coreModuleCodes.includes(code);
-      const reasonFn = REASON_TEMPLATES[code];
-      const reason = reasonFn
-        ? reasonFn(profile.displayName)
-        : `Recommended to build skills relevant to your ${profile.displayName} career path.`;
+  // Build candidate list with priorities
+  const validCodes = futureCodes.filter((code) => !!moduleBank[code as ModuleCode]);
+  const candidatesForScheduler = validCodes.map((code) => ({
+    code,
+    priority: profile.coreModuleCodes.includes(code)
+      ? ("essential" as const)
+      : ("recommended" as const),
+  }));
 
-      return {
-        moduleCode: code as ModuleCode,
-        name: moduleBank[code as ModuleCode]!.name,
-        reason,
-        year: schedule.year,
-        term: schedule.term,
-        priority: isCore ? "essential" : "recommended",
-        skillsGained: skills.slice(0, 3),
-      };
-    });
+  // Build optimised year/term schedule
+  const optimizedSlots = buildOptimizedSchedule(candidatesForScheduler, latestCompletedSlot);
+
+  // Build recommended module list, filtering to only what's in the module bank
+  const recommendedModules: RecommendedModule[] = validCodes.map((code) => {
+    const schedule = optimizedSlots.get(code) ?? { year: "2" as Year, term: "Term 1" as Term };
+    const skills = MODULE_SKILLS[code] ?? [];
+    const isCore = profile.coreModuleCodes.includes(code);
+    const reasonFn = REASON_TEMPLATES[code];
+    const reason = reasonFn
+      ? reasonFn(profile.displayName)
+      : `Recommended to build skills relevant to your ${profile.displayName} career path.`;
+
+    return {
+      moduleCode: code as ModuleCode,
+      name: moduleBank[code as ModuleCode]!.name,
+      reason,
+      year: schedule.year,
+      term: schedule.term,
+      priority: isCore ? "essential" : "recommended",
+      skillsGained: skills.slice(0, 3),
+    };
+  });
 
   // Sort by year → term
   recommendedModules.sort((a, b) => {

@@ -10,7 +10,6 @@ import {
   Github,
   LifeBuoy,
   Moon,
-  NotebookPen,
   Settings,
   Sun,
   Target,
@@ -47,15 +46,9 @@ const data = {
       isCollapsible: false,
     },
     {
-      title: "Bid Planner",
+      title: "Planner",
       url: "/bid-planner",
       icon: Target,
-      isCollapsible: false,
-    },
-    {
-      title: "Planner",
-      url: "/planner",
-      icon: NotebookPen,
       isCollapsible: false,
     },
     {

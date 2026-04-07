@@ -29,6 +29,7 @@ export type BidPlannerActions = {
   setPlannedBid: (moduleCode: ModuleCode, bid: number | null) => void;
   setBudget: (year: Year, term: Term, budget: number) => void;
   setTotalECredits: (total: number) => void;
+  clearAll: () => void;
 };
 
 export type BidPlannerStore = BidPlannerState & BidPlannerActions;
@@ -80,6 +81,7 @@ export const createBidPlannerStore = () =>
               [`${year}|${term}`]: budget,
             },
           })),
+        clearAll: () => set({ entries: {}, budgets: {}, totalECredits: 0 }),
       }),
       {
         name: "bidPlanner",

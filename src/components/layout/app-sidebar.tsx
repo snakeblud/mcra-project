@@ -76,9 +76,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const pathname = usePathname();
 
   const savedRec = useRecommendationStore((s) => s.saved);
+  const clearRecommendation = useRecommendationStore((s) => s.clearRecommendation);
   const entries = useBidPlannerStore((s) => s.entries);
+  const clearAll = useBidPlannerStore((s) => s.clearAll);
   const entryCount = Object.keys(entries).length;
   const hasSession = savedRec !== null || entryCount > 0;
+
+  function handleClearSession() {
+    clearRecommendation();
+    clearAll();
+  }
 
   return (
     <Sidebar {...props}>
@@ -111,8 +118,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         {/* ── Current Session ─────────────────────────────────────────── */}
         {hasSession && (
           <SidebarGroup>
-            <SidebarGroupLabel className="text-xs text-muted-foreground px-2 pb-1">
-              Current Session
+            <SidebarGroupLabel className="flex items-center justify-between px-2 pb-1">
+              <span className="text-xs text-muted-foreground">Current Session</span>
+              <button
+                onClick={handleClearSession}
+                className="text-[10px] text-muted-foreground/60 hover:text-destructive transition-colors leading-none"
+                title="Clear session"
+              >
+                Clear
+              </button>
             </SidebarGroupLabel>
             <SidebarGroupContent>
               <div className="space-y-1.5 px-1">

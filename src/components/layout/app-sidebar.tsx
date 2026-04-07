@@ -7,6 +7,7 @@ import {
   BookOpen,
   BrainCircuit,
   Calendar,
+  ChevronRight,
   Github,
   LifeBuoy,
   Moon,
@@ -22,6 +23,7 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
@@ -30,6 +32,8 @@ import {
 } from "@/components/ui/sidebar";
 import { APP_CONFIG } from "@/config";
 import { useTutorial } from "@/hooks/use-tutorial";
+import { useBidPlannerStore } from "@/stores/bidPlanner/provider";
+import { useRecommendationStore } from "@/stores/recommendation/provider";
 
 const data = {
   navMain: [
@@ -70,6 +74,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const { resolvedTheme, setTheme } = useTheme();
   const { openTutorial } = useTutorial();
   const pathname = usePathname();
+
+  const savedRec = useRecommendationStore((s) => s.saved);
+  const entries = useBidPlannerStore((s) => s.entries);
+  const entryCount = Object.keys(entries).length;
+  const hasSession = savedRec !== null || entryCount > 0;
+
   return (
     <Sidebar {...props}>
       <SidebarHeader></SidebarHeader>
@@ -97,6 +107,62 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+
+        {/* ── Current Session ─────────────────────────────────────────── */}
+        {hasSession && (
+          <SidebarGroup>
+            <SidebarGroupLabel className="text-xs text-muted-foreground px-2 pb-1">
+              Current Session
+            </SidebarGroupLabel>
+            <SidebarGroupContent>
+              <div className="space-y-1.5 px-1">
+
+                {/* AI Recommendation card */}
+                {savedRec && (
+                  <a
+                    href="/recommender"
+                    className="flex items-center justify-between gap-2 rounded-lg border border-primary/20 bg-primary/5 px-3 py-2 hover:bg-primary/10 transition-colors group"
+                  >
+                    <div className="flex items-center gap-2 min-w-0">
+                      <BrainCircuit className="h-3.5 w-3.5 text-primary shrink-0" />
+                      <div className="min-w-0">
+                        <p className="text-xs font-medium truncate leading-tight">
+                          {savedRec.result.jobRoleDetected}
+                        </p>
+                        <p className="text-[10px] text-muted-foreground leading-tight">
+                          {savedRec.result.recommendedModules.length} modules · AI Recommendation
+                        </p>
+                      </div>
+                    </div>
+                    <ChevronRight className="h-3 w-3 text-muted-foreground shrink-0 group-hover:text-primary transition-colors" />
+                  </a>
+                )}
+
+                {/* Bid Planner card */}
+                {entryCount > 0 && (
+                  <a
+                    href="/bid-planner"
+                    className="flex items-center justify-between gap-2 rounded-lg border border-orange-300/40 bg-orange-50/60 dark:border-orange-500/20 dark:bg-orange-950/30 px-3 py-2 hover:bg-orange-100/60 dark:hover:bg-orange-950/50 transition-colors group"
+                  >
+                    <div className="flex items-center gap-2 min-w-0">
+                      <Target className="h-3.5 w-3.5 text-orange-500 shrink-0" />
+                      <div className="min-w-0">
+                        <p className="text-xs font-medium truncate leading-tight">
+                          Bid Plan
+                        </p>
+                        <p className="text-[10px] text-muted-foreground leading-tight">
+                          {entryCount} module{entryCount !== 1 ? "s" : ""} planned
+                        </p>
+                      </div>
+                    </div>
+                    <ChevronRight className="h-3 w-3 text-muted-foreground shrink-0 group-hover:text-orange-500 transition-colors" />
+                  </a>
+                )}
+
+              </div>
+            </SidebarGroupContent>
+          </SidebarGroup>
+        )}
       </SidebarContent>
       <SidebarFooter className="mt-auto">
         <SidebarMenu>

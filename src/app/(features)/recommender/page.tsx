@@ -39,7 +39,7 @@ import {
   generateRecommendations,
 } from "@/lib/recommender-engine";
 import { useModuleBankStore } from "@/stores/moduleBank/provider";
-import { useMultiplePlannerStore } from "@/stores/multiplePlanners/provider";
+import { useBidPlannerStore } from "@/stores/bidPlanner/provider";
 import type { Term, Year } from "@/types/planner";
 import type { ModuleCode } from "@/types/primitives/module";
 
@@ -137,7 +137,7 @@ type Step = "form" | "processing" | "results";
 export default function RecommenderPage() {
   const router = useRouter();
   const { modules, refreshModuleBank } = useModuleBankStore((s) => s);
-  const { planners, addPlanner, addModule } = useMultiplePlannerStore((s) => s);
+  const { addEntry } = useBidPlannerStore((s) => s);
 
   // ── Step state
   const [step, setStep] = useState<Step>("form");
@@ -249,12 +249,12 @@ export default function RecommenderPage() {
     setStep("results");
   };
 
-  // ── Plan My Bids
+  // ── Plan My Bids — load recommended modules into the Bid Planner
   const handlePlanMyBids = async () => {
     if (!result) return;
     setIsCreatingPlan(true);
 
-    // Ensure modules are available
+    // Ensure module bank is available
     let bank = modules;
     if (Object.keys(bank).length === 0) {
       await refreshModuleBank();
@@ -264,28 +264,20 @@ export default function RecommenderPage() {
       bank = await fetch("/data/modules.json").then((r) => r.json());
     }
 
-    const plannerCount = Object.keys(planners).length;
-    const newPlannerId = `planner${plannerCount}`;
-
-    addPlanner(`AI Recommended: ${result.jobRoleDetected}`);
-
     for (const mod of result.recommendedModules) {
-      if (bank[mod.moduleCode]) {
-        addModule(
+      const bankMod = bank[mod.moduleCode as ModuleCode];
+      if (bankMod) {
+        addEntry(
           mod.moduleCode as ModuleCode,
-          {
-            id: mod.moduleCode,
-            year: mod.year as Year,
-            term: mod.term as Term,
-          },
-          bank,
-          newPlannerId,
+          mod.year as Year,
+          mod.term as Term,
+          bankMod,
         );
       }
     }
 
     setIsCreatingPlan(false);
-    router.push(`/planner/${newPlannerId}`);
+    router.push("/bid-planner");
   };
 
   // ─────────────────────────────────────────────────────────────────────────────

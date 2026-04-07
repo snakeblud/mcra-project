@@ -7,7 +7,6 @@ import {
   BookOpen,
   BrainCircuit,
   Calendar,
-  ChartArea,
   Github,
   LifeBuoy,
   Moon,
@@ -45,12 +44,6 @@ const data = {
       title: "AI Module Recommender",
       url: "/recommender",
       icon: BrainCircuit,
-      isCollapsible: false,
-    },
-    {
-      title: "Bid Price Analytics",
-      url: "/bid-analytics",
-      icon: ChartArea,
       isCollapsible: false,
     },
     {
